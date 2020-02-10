@@ -6,7 +6,7 @@
 //  Copyright © 2020 Userbrain. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 extension URL {
 	public func appendingParam(name: String, value: String?) -> URL {
