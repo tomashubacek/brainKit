@@ -13,6 +13,8 @@
 		EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9DF23F19E0200F63697 /* StringExtensionsTests.swift */; };
 		EE35F9E223F1A02000F63697 /* URL+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9E123F1A02000F63697 /* URL+ubr.swift */; };
 		EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */; };
+		EE35F9EC23F1B8D300F63697 /* UserDefaults+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9EB23F1B8D300F63697 /* UserDefaults+ubr.swift */; };
+		EE35F9EE23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		EE35F9DF23F19E0200F63697 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 		EE35F9E123F1A02000F63697 /* URL+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ubr.swift"; sourceTree = "<group>"; };
 		EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionsTests.swift; sourceTree = "<group>"; };
+		EE35F9EB23F1B8D300F63697 /* UserDefaults+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+ubr.swift"; sourceTree = "<group>"; };
+		EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				EE35F9D323F1985800F63697 /* Info.plist */,
+				EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */,
 				EE35F9DF23F19E0200F63697 /* StringExtensionsTests.swift */,
 				EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */,
 			);
@@ -101,6 +106,7 @@
 				EE35F9DB23F1993A00F63697 /* String+ubr.swift */,
 				EE35F9DD23F1999000F63697 /* Data+ubr.swift */,
 				EE35F9E123F1A02000F63697 /* URL+ubr.swift */,
+				EE35F9EB23F1B8D300F63697 /* UserDefaults+ubr.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE35F9EC23F1B8D300F63697 /* UserDefaults+ubr.swift in Sources */,
 				EE35F9DC23F1993A00F63697 /* String+ubr.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+ubr.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+ubr.swift in Sources */,
@@ -225,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE35F9EE23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift in Sources */,
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
 			);
