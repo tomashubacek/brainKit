@@ -30,4 +30,11 @@ extension String {
 		self = self.removingNonBreakingSpaces()
 	}
 
+	public func trimmingWhitespacesAndNewlines() -> String {
+		self.trimmingCharacters(in: .whitespacesAndNewlines)
+	}
+
+	public mutating func trimWhitespacesAndNewlines() {
+		self = self.trimmingWhitespacesAndNewlines()
+	}
 }

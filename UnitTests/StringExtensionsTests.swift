@@ -23,6 +23,18 @@ final class StringExtensionsTests: XCTestCase {
 		XCTAssertEqual(input, "x y z")
 	}
 
+	func testtrimmingWhitespacesAndNewlines() {
+		let input = "\n a b c \t"
+		let output = input.trimmingWhitespacesAndNewlines()
+		XCTAssertEqual(output, "a b c")
+	}
+
+	func testtrimmingWhitespacesAndNewlinesMutating() {
+		var input = "\n a b c \t"
+		input.trimWhitespacesAndNewlines()
+		XCTAssertEqual(input, "a b c")
+	}
+
 	func testBase64Encode() {
 		let input = "hello"
 		let output = input.toBase64()
