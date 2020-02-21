@@ -23,6 +23,8 @@
 		EE8138F423FFDEE6005CE46D /* File.bin in Resources */ = {isa = PBXBuildFile; fileRef = EE8138F323FFDEE6005CE46D /* File.bin */; };
 		EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138F624003AB8005CE46D /* TestableFatals.swift */; };
 		EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */; };
+		EE8138FC240054A7005CE46D /* Double+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138FB240054A7005CE46D /* Double+ubr.swift */; };
+		EE8138FE240054BE005CE46D /* DoubleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		EE8138F323FFDEE6005CE46D /* File.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = File.bin; sourceTree = "<group>"; };
 		EE8138F624003AB8005CE46D /* TestableFatals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableFatals.swift; sourceTree = "<group>"; };
 		EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Fatals.swift"; sourceTree = "<group>"; };
+		EE8138FB240054A7005CE46D /* Double+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ubr.swift"; sourceTree = "<group>"; };
+		EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */,
 				EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */,
 				EE8138EE23FEE3E0005CE46D /* BundleExtensionsTests.swift */,
+				EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 				EE35F9E123F1A02000F63697 /* URL+ubr.swift */,
 				EE35F9EB23F1B8D300F63697 /* UserDefaults+ubr.swift */,
 				EE8138E823FED60B005CE46D /* Collection+ubr.swift */,
+				EE8138FB240054A7005CE46D /* Double+ubr.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 			files = (
 				EE8138E923FED60B005CE46D /* Collection+ubr.swift in Sources */,
 				EE35F9EC23F1B8D300F63697 /* UserDefaults+ubr.swift in Sources */,
+				EE8138FC240054A7005CE46D /* Double+ubr.swift in Sources */,
 				EE35F9DC23F1993A00F63697 /* String+ubr.swift in Sources */,
 				EE8138ED23FEDA8A005CE46D /* Bundle+ubr.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
@@ -287,6 +294,7 @@
 			files = (
 				EE35F9EE23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift in Sources */,
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
+				EE8138FE240054BE005CE46D /* DoubleExtensionsTests.swift in Sources */,
 				EE8138EF23FEE3E0005CE46D /* BundleExtensionsTests.swift in Sources */,
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
