@@ -6,7 +6,7 @@
 //  Copyright © 2020 Userbrain. All rights reserved.
 //
 
-@testable import BrainKit
+import BrainKit
 import XCTest
 
 final class BundleMock: Bundle {
