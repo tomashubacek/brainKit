@@ -37,4 +37,12 @@ extension String {
 	public mutating func trimWhitespacesAndNewlines() {
 		self = self.trimmingWhitespacesAndNewlines()
 	}
+
+	public var isValidEmail: Bool {
+		let pattern = "\\A[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+\\z"
+		let regex = try! NSRegularExpression(pattern: pattern, options: [])
+		let matches = regex.matches(in: self, options: [], range: NSRange(location: 0, length: self.count))
+		return matches.count == 1
+	}
+
 }
