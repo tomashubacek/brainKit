@@ -9,6 +9,18 @@
 @testable import BrainKit
 import XCTest
 
+final class BundleMock: Bundle {
+	override func object(forInfoDictionaryKey key: String) -> Any? {
+		if key == "CFBundleVersion" {
+			return "123" // build
+		} else if key == "CFBundleShortVersionString" {
+			return "1.2.3" // app
+		} else {
+			return nil
+		}
+	}
+}
+
 final class BundleExtensionsTests: XCTestCase {
 
 	func testExistingTextFileStringLoad() {
@@ -39,5 +51,17 @@ final class BundleExtensionsTests: XCTestCase {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadDataFromFile("DefinitelyNotExistingFile.txt")
 		XCTAssertNil(content)
+	}
+
+	func testAppVersion() {
+		let bundle = BundleMock()
+		let expectation = bundle.appVersion
+		XCTAssertEqual(expectation, "1.2.3")
+	}
+
+	func testBuildVersion() {
+		let bundle = BundleMock()
+		let expectation = bundle.buildVersion
+		XCTAssertEqual(expectation, "123")
 	}
 }

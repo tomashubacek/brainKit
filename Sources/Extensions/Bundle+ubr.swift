@@ -30,4 +30,14 @@ extension Bundle {
 			return nil
 		}
 	}
+
+	public var buildVersion: String {
+		guard let str = self.object(forInfoDictionaryKey: "CFBundleVersion") as? String else { return "" }
+		return str
+	}
+
+	public var appVersion: String {
+		guard let str = self.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String else { return "" }
+		return str
+	}
 }
