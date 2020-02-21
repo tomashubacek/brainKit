@@ -21,6 +21,8 @@
 		EE8138EF23FEE3E0005CE46D /* BundleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138EE23FEE3E0005CE46D /* BundleExtensionsTests.swift */; };
 		EE8138F223FEE41B005CE46D /* HelloWorld.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE8138F123FEE41B005CE46D /* HelloWorld.txt */; };
 		EE8138F423FFDEE6005CE46D /* File.bin in Resources */ = {isa = PBXBuildFile; fileRef = EE8138F323FFDEE6005CE46D /* File.bin */; };
+		EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138F624003AB8005CE46D /* TestableFatals.swift */; };
+		EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		EE8138EE23FEE3E0005CE46D /* BundleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensionsTests.swift; sourceTree = "<group>"; };
 		EE8138F123FEE41B005CE46D /* HelloWorld.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HelloWorld.txt; sourceTree = "<group>"; };
 		EE8138F323FFDEE6005CE46D /* File.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = File.bin; sourceTree = "<group>"; };
+		EE8138F624003AB8005CE46D /* TestableFatals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableFatals.swift; sourceTree = "<group>"; };
+		EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Fatals.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		EE35F9C623F1981300F63697 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EE8138F524003A92005CE46D /* Support */,
 				EE35F9DA23F1988600F63697 /* Extensions */,
 				EE35F9C723F1981300F63697 /* BrainKit.h */,
 				EE35F9C823F1981300F63697 /* Info.plist */,
@@ -104,6 +109,7 @@
 		EE35F9D023F1985800F63697 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE8138F824003B6F005CE46D /* Extensions */,
 				EE8138F023FEE3FC005CE46D /* Resources */,
 				EE35F9D323F1985800F63697 /* Info.plist */,
 				EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */,
@@ -135,6 +141,22 @@
 				EE8138F123FEE41B005CE46D /* HelloWorld.txt */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE8138F524003A92005CE46D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EE8138F624003AB8005CE46D /* TestableFatals.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EE8138F824003B6F005CE46D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +275,7 @@
 				EE35F9EC23F1B8D300F63697 /* UserDefaults+ubr.swift in Sources */,
 				EE35F9DC23F1993A00F63697 /* String+ubr.swift in Sources */,
 				EE8138ED23FEDA8A005CE46D /* Bundle+ubr.swift in Sources */,
+				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+ubr.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+ubr.swift in Sources */,
 			);
@@ -267,6 +290,7 @@
 				EE8138EF23FEE3E0005CE46D /* BundleExtensionsTests.swift in Sources */,
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
+				EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
