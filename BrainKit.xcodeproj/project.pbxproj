@@ -25,6 +25,8 @@
 		EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */; };
 		EE8138FC240054A7005CE46D /* Double+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138FB240054A7005CE46D /* Double+ubr.swift */; };
 		EE8138FE240054BE005CE46D /* DoubleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */; };
+		EE81390024010BF2005CE46D /* UIColor+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138FF24010BF2005CE46D /* UIColor+ubr.swift */; };
+		EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Fatals.swift"; sourceTree = "<group>"; };
 		EE8138FB240054A7005CE46D /* Double+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ubr.swift"; sourceTree = "<group>"; };
 		EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionsTests.swift; sourceTree = "<group>"; };
+		EE8138FF24010BF2005CE46D /* UIColor+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ubr.swift"; sourceTree = "<group>"; };
+		EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 				EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */,
 				EE8138EE23FEE3E0005CE46D /* BundleExtensionsTests.swift */,
 				EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */,
+				EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				EE35F9EB23F1B8D300F63697 /* UserDefaults+ubr.swift */,
 				EE8138E823FED60B005CE46D /* Collection+ubr.swift */,
 				EE8138FB240054A7005CE46D /* Double+ubr.swift */,
+				EE8138FF24010BF2005CE46D /* UIColor+ubr.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE81390024010BF2005CE46D /* UIColor+ubr.swift in Sources */,
 				EE8138E923FED60B005CE46D /* Collection+ubr.swift in Sources */,
 				EE35F9EC23F1B8D300F63697 /* UserDefaults+ubr.swift in Sources */,
 				EE8138FC240054A7005CE46D /* Double+ubr.swift in Sources */,
@@ -299,6 +306,7 @@
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
 				EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */,
+				EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
