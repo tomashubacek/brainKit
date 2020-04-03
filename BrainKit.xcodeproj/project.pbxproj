@@ -34,6 +34,7 @@
 		EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */; };
 		EE81390424013B50005CE46D /* Dictionary+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE81390324013B50005CE46D /* Dictionary+ubr.swift */; };
 		EE8BD9BF243763DF00957FAD /* UIView+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9BE243763DF00957FAD /* UIView+ubr.swift */; };
+		EE8BD9C12437663F00957FAD /* UIFont+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9C02437663F00957FAD /* UIFont+ubr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionsTests.swift; sourceTree = "<group>"; };
 		EE81390324013B50005CE46D /* Dictionary+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ubr.swift"; sourceTree = "<group>"; };
 		EE8BD9BE243763DF00957FAD /* UIView+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ubr.swift"; sourceTree = "<group>"; };
+		EE8BD9C02437663F00957FAD /* UIFont+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+ubr.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				EE5CD94C24067E6B002C53E9 /* Array+ubr.swift */,
 				EE35F9DB23F1993A00F63697 /* String+ubr.swift */,
+				EE8BD9C02437663F00957FAD /* UIFont+ubr.swift */,
 				EE8138EC23FEDA8A005CE46D /* Bundle+ubr.swift */,
 				EE35F9DD23F1999000F63697 /* Data+ubr.swift */,
 				EE35F9E123F1A02000F63697 /* URL+ubr.swift */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8BD9C12437663F00957FAD /* UIFont+ubr.swift in Sources */,
 				EE81390024010BF2005CE46D /* UIColor+ubr.swift in Sources */,
 				EE8138E923FED60B005CE46D /* Collection+ubr.swift in Sources */,
 				EE5CD94F240FF4DE002C53E9 /* Sequence+ubr.swift in Sources */,
