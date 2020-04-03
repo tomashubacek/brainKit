@@ -33,6 +33,7 @@
 		EE81390024010BF2005CE46D /* UIColor+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138FF24010BF2005CE46D /* UIColor+ubr.swift */; };
 		EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */; };
 		EE81390424013B50005CE46D /* Dictionary+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE81390324013B50005CE46D /* Dictionary+ubr.swift */; };
+		EE8BD9BF243763DF00957FAD /* UIView+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9BE243763DF00957FAD /* UIView+ubr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		EE8138FF24010BF2005CE46D /* UIColor+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ubr.swift"; sourceTree = "<group>"; };
 		EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionsTests.swift; sourceTree = "<group>"; };
 		EE81390324013B50005CE46D /* Dictionary+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ubr.swift"; sourceTree = "<group>"; };
+		EE8BD9BE243763DF00957FAD /* UIView+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ubr.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				EE8138FF24010BF2005CE46D /* UIColor+ubr.swift */,
 				EE81390324013B50005CE46D /* Dictionary+ubr.swift */,
 				EE5CD94E240FF4DE002C53E9 /* Sequence+ubr.swift */,
+				EE8BD9BE243763DF00957FAD /* UIView+ubr.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				EE35F9EC23F1B8D300F63697 /* UserDefaults+ubr.swift in Sources */,
 				EE8138FC240054A7005CE46D /* Double+ubr.swift in Sources */,
 				EE35F9DC23F1993A00F63697 /* String+ubr.swift in Sources */,
+				EE8BD9BF243763DF00957FAD /* UIView+ubr.swift in Sources */,
 				EE8138ED23FEDA8A005CE46D /* Bundle+ubr.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+ubr.swift in Sources */,
