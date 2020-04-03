@@ -21,5 +21,23 @@ extension UIView {
 		self.layer.borderColor = color.cgColor
 		self.layer.borderWidth = width
 	}
+
+	public func setCorners(withRadius radius: CGFloat) {
+		self.layer.cornerRadius = radius
+	}
+
+	@available(iOS 11, *)
+	public func setCorners(withRadius radius: CGFloat, masked: CACornerMask? = nil) {
+		self.setCorners(withRadius: radius)
+		if let masked = masked {
+			self.layer.maskedCorners = masked
+		}
+	}
+
+	@available(iOS 13, *)
+	public func setCorners(withRadius radius: CGFloat, masked: CACornerMask? = nil, curve: CALayerCornerCurve = .continuous) {
+		self.setCorners(withRadius: radius, masked: masked)
+		self.layer.cornerCurve = curve
+	}
 }
 
