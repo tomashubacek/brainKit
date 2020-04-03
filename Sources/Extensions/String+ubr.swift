@@ -6,7 +6,7 @@
 //  Copyright © 2020 Userbrain. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension String {
 	public var data: Data {
@@ -45,4 +45,15 @@ extension String {
 		return matches.count == 1
 	}
 
+	public func width(withConstrainedHeight height: CGFloat, font: UIFont) -> CGFloat {
+		let rect = CGSize(width: .greatestFiniteMagnitude, height: height)
+		let bounds = self.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
+		return ceil(bounds.width)
+	}
+
+	public func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+		let rect = CGSize(width: width, height: .greatestFiniteMagnitude)
+		let bounds = self.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
+		return ceil(bounds.height)
+	}
 }
