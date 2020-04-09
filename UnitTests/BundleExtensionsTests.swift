@@ -53,6 +53,23 @@ final class BundleExtensionsTests: XCTestCase {
 		XCTAssertNil(content)
 	}
 
+	func testExistingFilePlistLoad() {
+		let bundle = Bundle(for: type(of: self))
+		guard let content = bundle.loadPlistFromFile("HelloWorld.plist") else {
+			XCTFail("Could not load plist.")
+			return
+		}
+		let value = content["Hello"] as? String
+		XCTAssertNotNil(value)
+		XCTAssertEqual(value, "World")
+	}
+
+	func testNonExistingFilePlistLoad() {
+		let bundle = Bundle(for: type(of: self))
+		let content = bundle.loadPlistFromFile("non-existing-file")
+		XCTAssertNil(content)
+	}
+
 	func testAppVersion() {
 		let bundle = BundleMock()
 		let expectation = bundle.appVersion

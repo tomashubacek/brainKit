@@ -31,6 +31,14 @@ extension Bundle {
 		}
 	}
 
+	public func loadPlistFromFile(_ name: String) -> [String: Any]? {
+		guard let url = self.url(forResource: name, withExtension: nil) else { return nil }
+		guard let data = try? Data(contentsOf: url) else { return nil }
+		guard let plist = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) else { return nil }
+		guard let dictionary = plist as? [String: Any] else { return nil }
+		return dictionary
+	}
+
 	public var buildVersion: String {
 		guard let str = self.object(forInfoDictionaryKey: "CFBundleVersion") as? String else { return "" }
 		return str

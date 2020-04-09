@@ -11,6 +11,7 @@
 		EE050DB9243F08DA00CB691D /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE050DB8243F08DA00CB691D /* StoryboardInstantiable.swift */; };
 		EE050DBB243F091500CB691D /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE050DBA243F091500CB691D /* StoryboardViewController.swift */; };
 		EE050DBD243F093D00CB691D /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE050DBC243F093D00CB691D /* StoryboardViewController.storyboard */; };
+		EE050DC3243F1F6100CB691D /* HelloWorld.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE050DC2243F1F6100CB691D /* HelloWorld.plist */; };
 		EE2549A5243CBBC800008607 /* NSLayoutConstraint+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2549A4243CBBC800008607 /* NSLayoutConstraint+ubr.swift */; };
 		EE35F9D423F1985800F63697 /* BrainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35F9BB23F1978700F63697 /* BrainKit.framework */; };
 		EE35F9DC23F1993A00F63697 /* String+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9DB23F1993A00F63697 /* String+ubr.swift */; };
@@ -58,6 +59,7 @@
 		EE050DB8243F08DA00CB691D /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		EE050DBA243F091500CB691D /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
 		EE050DBC243F093D00CB691D /* StoryboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardViewController.storyboard; sourceTree = "<group>"; };
+		EE050DC2243F1F6100CB691D /* HelloWorld.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelloWorld.plist; sourceTree = "<group>"; };
 		EE2549A4243CBBC800008607 /* NSLayoutConstraint+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+ubr.swift"; sourceTree = "<group>"; };
 		EE35F9BB23F1978700F63697 /* BrainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE35F9C723F1981300F63697 /* BrainKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainKit.h; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				EE8138F323FFDEE6005CE46D /* File.bin */,
+				EE050DC2243F1F6100CB691D /* HelloWorld.plist */,
 				EE8138F123FEE41B005CE46D /* HelloWorld.txt */,
 				EE050DBC243F093D00CB691D /* StoryboardViewController.storyboard */,
 				EE050DBA243F091500CB691D /* StoryboardViewController.swift */,
@@ -323,6 +326,7 @@
 			files = (
 				EE8138F223FEE41B005CE46D /* HelloWorld.txt in Resources */,
 				EE050DBD243F093D00CB691D /* StoryboardViewController.storyboard in Resources */,
+				EE050DC3243F1F6100CB691D /* HelloWorld.plist in Resources */,
 				EE8138F423FFDEE6005CE46D /* File.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
