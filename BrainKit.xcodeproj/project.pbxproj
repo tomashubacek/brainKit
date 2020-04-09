@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE050DB7243F087D00CB691D /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE050DB6243F087D00CB691D /* StoryboardInstantiable.swift */; };
+		EE050DB9243F08DA00CB691D /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE050DB8243F08DA00CB691D /* StoryboardInstantiable.swift */; };
+		EE050DBB243F091500CB691D /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE050DBA243F091500CB691D /* StoryboardViewController.swift */; };
+		EE050DBD243F093D00CB691D /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE050DBC243F093D00CB691D /* StoryboardViewController.storyboard */; };
 		EE2549A5243CBBC800008607 /* NSLayoutConstraint+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2549A4243CBBC800008607 /* NSLayoutConstraint+ubr.swift */; };
 		EE35F9D423F1985800F63697 /* BrainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35F9BB23F1978700F63697 /* BrainKit.framework */; };
 		EE35F9DC23F1993A00F63697 /* String+ubr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9DB23F1993A00F63697 /* String+ubr.swift */; };
@@ -50,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE050DB6243F087D00CB691D /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		EE050DB8243F08DA00CB691D /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		EE050DBA243F091500CB691D /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
+		EE050DBC243F093D00CB691D /* StoryboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardViewController.storyboard; sourceTree = "<group>"; };
 		EE2549A4243CBBC800008607 /* NSLayoutConstraint+ubr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+ubr.swift"; sourceTree = "<group>"; };
 		EE35F9BB23F1978700F63697 /* BrainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE35F9C723F1981300F63697 /* BrainKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainKit.h; sourceTree = "<group>"; };
@@ -105,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE050DB5243F086C00CB691D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EE050DB6243F087D00CB691D /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EE35F9B123F1978700F63697 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +142,7 @@
 		EE35F9C623F1981300F63697 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EE050DB5243F086C00CB691D /* Protocols */,
 				EE8138F524003A92005CE46D /* Support */,
 				EE35F9DA23F1988600F63697 /* Extensions */,
 				EE35F9C723F1981300F63697 /* BrainKit.h */,
@@ -148,6 +165,7 @@
 				EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */,
 				EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */,
 				EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */,
+				EE050DB8243F08DA00CB691D /* StoryboardInstantiable.swift */,
 				EE5CD950240FF522002C53E9 /* SequenceExtensionsTests.swift */,
 				EE5CD96E24112BC4002C53E9 /* DictionaryExtensionsTests.swift */,
 			);
@@ -181,6 +199,8 @@
 			children = (
 				EE8138F323FFDEE6005CE46D /* File.bin */,
 				EE8138F123FEE41B005CE46D /* HelloWorld.txt */,
+				EE050DBC243F093D00CB691D /* StoryboardViewController.storyboard */,
+				EE050DBA243F091500CB691D /* StoryboardViewController.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -302,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8138F223FEE41B005CE46D /* HelloWorld.txt in Resources */,
+				EE050DBD243F093D00CB691D /* StoryboardViewController.storyboard in Resources */,
 				EE8138F423FFDEE6005CE46D /* File.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +342,7 @@
 				EE8138FC240054A7005CE46D /* Double+ubr.swift in Sources */,
 				EE8E6F7E2437870400E01821 /* CGFloat+ubr.swift in Sources */,
 				EE35F9DC23F1993A00F63697 /* String+ubr.swift in Sources */,
+				EE050DB7243F087D00CB691D /* StoryboardInstantiable.swift in Sources */,
 				EE8BD9BF243763DF00957FAD /* UIView+ubr.swift in Sources */,
 				EE8138ED23FEDA8A005CE46D /* Bundle+ubr.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
@@ -337,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE35F9EE23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift in Sources */,
+				EE050DBB243F091500CB691D /* StoryboardViewController.swift in Sources */,
 				EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */,
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
 				EE8138FE240054BE005CE46D /* DoubleExtensionsTests.swift in Sources */,
@@ -346,6 +369,7 @@
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
 				EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */,
+				EE050DB9243F08DA00CB691D /* StoryboardInstantiable.swift in Sources */,
 				EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
