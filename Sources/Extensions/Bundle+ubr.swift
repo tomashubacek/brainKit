@@ -10,25 +10,13 @@ import Foundation
 
 extension Bundle {
 	public func loadStringFromFile(_ name: String) -> String? {
-		guard let path = self.path(forResource: name, ofType: nil) else {
-			return nil
-		}
-		do {
-			return try String(contentsOfFile: path)
-		} catch {
-			return nil
-		}
+		guard let path = self.path(forResource: name, ofType: nil) else { return nil }
+		return try? String(contentsOfFile: path)
 	}
 
 	public func loadDataFromFile(_ name: String) -> Data? {
-		guard let url = self.url(forResource: name, withExtension: nil) else {
-			return nil
-		}
-		do {
-			return try Data(contentsOf: url)
-		} catch {
-			return nil
-		}
+		guard let url = self.url(forResource: name, withExtension: nil) else { return nil }
+		return try? Data(contentsOf: url)
 	}
 
 	public func loadPlistFromFile(_ name: String) -> [String: Any]? {

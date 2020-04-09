@@ -31,7 +31,7 @@ final class BundleExtensionsTests: XCTestCase {
 
 	func testNonExistingFileStringLoad() {
 		let bundle = Bundle(for: type(of: self))
-		let content = bundle.loadStringFromFile("DefinitelyNotExistingFile.txt")
+		let content = bundle.loadStringFromFile("non-existing-file")
 		XCTAssertNil(content)
 	}
 
@@ -49,7 +49,7 @@ final class BundleExtensionsTests: XCTestCase {
 
 	func testNonExistingFileDataLoad() {
 		let bundle = Bundle(for: type(of: self))
-		let content = bundle.loadDataFromFile("DefinitelyNotExistingFile.txt")
+		let content = bundle.loadDataFromFile("non-existing-file")
 		XCTAssertNil(content)
 	}
 
