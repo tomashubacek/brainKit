@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.authors          = {"Ondrej Hanak" => "oh@ondrejhanak.cz", "Jakub Heglas" => "jakub@userbrain.co"}
   s.source           = {:git => "https://bitbucket.org/userbrain/brainkit.git", :tag => s.version.to_s}
   s.platform         = :ios, "10.0"
-  s.source_files     = "Sources/**/*.{swift,h}", "LICENSE"
+  s.source_files     = "Sources/**/*.{swift,h}"
 end
