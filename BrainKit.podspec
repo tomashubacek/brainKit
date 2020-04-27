@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "BrainKit"
   s.summary = "Useful extensions and classes."
-  s.version = "0.0.4"
+  s.version = "0.0.5"
   s.swift_version = "5.0"
   s.homepage = "https://userbrain.co"
   s.license = {:type => "MIT", :file => "LICENSE"}
