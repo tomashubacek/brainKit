@@ -25,4 +25,9 @@ Pod::Spec.new do |s|
     ss.dependency "BrainKit/Foundation"
     ss.dependency "SwiftyJSON", "~> 5"
   end
+
+  s.subspec "CoreData" do |ss|
+    ss.source_files = "Sources/CoreData/**/*.swift"
+    ss.ios.frameworks = "Coredata"
+  end
 end
