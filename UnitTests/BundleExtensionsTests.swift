@@ -8,6 +8,7 @@
 
 import BrainKit
 import XCTest
+import SwiftyJSON
 
 final class BundleMock: Bundle {
 	override func object(forInfoDictionaryKey key: String) -> Any? {
@@ -67,6 +68,28 @@ final class BundleExtensionsTests: XCTestCase {
 	func testNonExistingFilePlistLoad() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadPlistFromFile("non-existing-file")
+		XCTAssertNil(content)
+	}
+
+	func testNonExistingJSONLoad() {
+		let bundle = Bundle(for: type(of: self))
+		let content = bundle.loadJSONFromFile("non-existing-file")
+		XCTAssertNil(content)
+	}
+
+	func testExistingJSONLoad() {
+		let bundle = Bundle(for: type(of: self))
+		let content = bundle.loadJSONFromFile("HelloWorld.json")
+		guard let json = content else {
+			XCTFail("JSON should not be nil.")
+			return
+		}
+		XCTAssertEqual(json["hello"].stringValue, "world")
+	}
+
+	func testExistingNonJSONLoad() {
+		let bundle = Bundle(for: type(of: self))
+		let content = bundle.loadJSONFromFile("HelloWorld.txt")
 		XCTAssertNil(content)
 	}
 
