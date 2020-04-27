@@ -6,6 +6,8 @@
 //  Copyright © 2020 Userbrain. All rights reserved.
 //
 
+import Foundation
+
 extension Array {
 	public mutating func move(from: Int, to: Int) {
 		guard from != to else { return }

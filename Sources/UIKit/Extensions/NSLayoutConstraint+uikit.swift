@@ -1,5 +1,5 @@
 //
-//  NSLayoutConstraint+ubr.swift
+//  NSLayoutConstraint+uikit.swift
 //  BrainKit
 //
 //  Created by Ondřej Hanák on 07. 04. 2020.

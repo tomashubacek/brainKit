@@ -1,5 +1,5 @@
 //
-//  CGFloat+ubr.swift
+//  CGFloat+uikit.swift
 //  BrainKit
 //
 //  Created by Ondřej Hanák on 03. 04. 2020.

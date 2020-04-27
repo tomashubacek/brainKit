@@ -6,7 +6,7 @@
 //  Copyright © 2020 Userbrain. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 extension String {
 	public var data: Data {
@@ -43,17 +43,5 @@ extension String {
 		let regex = try! NSRegularExpression(pattern: pattern, options: [])
 		let matches = regex.matches(in: self, options: [], range: NSRange(location: 0, length: self.count))
 		return matches.count == 1
-	}
-
-	public func width(withConstrainedHeight height: CGFloat, font: UIFont) -> CGFloat {
-		let rect = CGSize(width: .greatestFiniteMagnitude, height: height)
-		let bounds = self.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
-		return ceil(bounds.width)
-	}
-
-	public func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
-		let rect = CGSize(width: width, height: .greatestFiniteMagnitude)
-		let bounds = self.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
-		return ceil(bounds.height)
 	}
 }
