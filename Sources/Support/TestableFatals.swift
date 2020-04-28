@@ -17,7 +17,7 @@ public func fatalError(_ message: @autoclosure () -> String = "", file: StaticSt
 }
 
 /// This is a `noreturn` function that pauses forever
-public func unreachable() -> Never{
+public func unreachable() -> Never {
 	repeat {
 		RunLoop.current.run()
 	} while (true)
