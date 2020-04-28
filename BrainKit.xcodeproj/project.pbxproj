@@ -223,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				EE35F9C623F1981300F63697 /* Sources */,
+				EE8138F524003A92005CE46D /* Support */,
 				EE35F9D023F1985800F63697 /* UnitTests */,
 				EE35F9BC23F1978700F63697 /* Products */,
 				5E693442A9D8CCE50420CD1C /* Pods */,
@@ -246,9 +247,6 @@
 				EE0A95382456D3A9008E3AD6 /* SwiftyJSON */,
 				EE0A95342456C6A5008E3AD6 /* Foundation */,
 				EE0A95332456C68D008E3AD6 /* UIKit */,
-				EE8138F524003A92005CE46D /* Support */,
-				EE35F9C723F1981300F63697 /* BrainKit.h */,
-				EE35F9C823F1981300F63697 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -303,6 +301,8 @@
 		EE8138F524003A92005CE46D /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				EE35F9C723F1981300F63697 /* BrainKit.h */,
+				EE35F9C823F1981300F63697 /* Info.plist */,
 				EE8138F624003AB8005CE46D /* TestableFatals.swift */,
 			);
 			path = Support;
@@ -682,7 +682,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -709,7 +709,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
