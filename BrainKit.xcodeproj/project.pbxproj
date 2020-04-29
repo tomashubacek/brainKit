@@ -48,6 +48,7 @@
 		EE8BD9BF243763DF00957FAD /* UIView+uikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9BE243763DF00957FAD /* UIView+uikit.swift */; };
 		EE8BD9C12437663F00957FAD /* UIFont+uikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9C02437663F00957FAD /* UIFont+uikit.swift */; };
 		EE8E6F7E2437870400E01821 /* CGFloat+uikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E6F7D2437870400E01821 /* CGFloat+uikit.swift */; };
+		EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		EE8BD9BE243763DF00957FAD /* UIView+uikit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+uikit.swift"; sourceTree = "<group>"; };
 		EE8BD9C02437663F00957FAD /* UIFont+uikit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+uikit.swift"; sourceTree = "<group>"; };
 		EE8E6F7D2437870400E01821 /* CGFloat+uikit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+uikit.swift"; sourceTree = "<group>"; };
+		EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				EE0A95352456C6B2008E3AD6 /* Extensions */,
+				EEAEAF8324596A41009FC6E7 /* Classes */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -314,6 +317,14 @@
 				EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEAEAF8324596A41009FC6E7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,6 +526,7 @@
 				EE35F9DE23F1999000F63697 /* Data+ubr.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+ubr.swift in Sources */,
 				EE5CD94D24067E6C002C53E9 /* Array+ubr.swift in Sources */,
+				EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */,
 				EE81390424013B50005CE46D /* Dictionary+ubr.swift in Sources */,
 				EE2549A5243CBBC800008607 /* NSLayoutConstraint+uikit.swift in Sources */,
 			);
