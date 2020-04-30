@@ -1,5 +1,5 @@
 //
-//  String+uikit.swift
+//  String+UIKit.swift
 //  BrainKit
 //
 //  Created by Ondřej Hanák on 10. 02. 2020.

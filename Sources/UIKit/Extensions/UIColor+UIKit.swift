@@ -1,5 +1,5 @@
 //
-//  UIColor+uikit.swift
+//  UIColor+UIKit.swift
 //  BrainKit
 //
 //  Created by Ondřej Hanák on 22. 02. 2020.

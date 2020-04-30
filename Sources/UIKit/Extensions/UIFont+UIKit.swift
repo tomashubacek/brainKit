@@ -1,5 +1,5 @@
 //
-//  UIFont+uikit.swift
+//  UIFont+UIKit.swift
 //  BrainKit
 //
 //  Created by Ondřej Hanák on 03. 04. 2020.

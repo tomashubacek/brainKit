@@ -1,5 +1,5 @@
 //
-//  Collection+ubr.swift
+//  Collection+Foundation.swift
 //  BrainKit
 //
 //  Created by Ondřej Hanák on 20. 02. 2020.
