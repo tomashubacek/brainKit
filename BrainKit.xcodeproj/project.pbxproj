@@ -49,6 +49,8 @@
 		EE8BD9C12437663F00957FAD /* UIFont+uikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9C02437663F00957FAD /* UIFont+uikit.swift */; };
 		EE8E6F7E2437870400E01821 /* CGFloat+uikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E6F7D2437870400E01821 /* CGFloat+uikit.swift */; };
 		EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */; };
+		EEAEAF8D2459DF64009FC6E7 /* Date+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */; };
+		EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8E245AA600009FC6E7 /* DateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,7 @@
 		EE8BD9C02437663F00957FAD /* UIFont+uikit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+uikit.swift"; sourceTree = "<group>"; };
 		EE8E6F7D2437870400E01821 /* CGFloat+uikit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+uikit.swift"; sourceTree = "<group>"; };
 		EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatter.swift; sourceTree = "<group>"; };
+		EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Foundation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,7 @@
 				EE8138FB240054A7005CE46D /* Double+ubr.swift */,
 				EE81390324013B50005CE46D /* Dictionary+ubr.swift */,
 				EE5CD94E240FF4DE002C53E9 /* Sequence+ubr.swift */,
+				EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -521,6 +525,7 @@
 				EE35F9DC23F1993A00F63697 /* String+uikit.swift in Sources */,
 				EE050DB7243F087D00CB691D /* StoryboardInstantiable.swift in Sources */,
 				EE8BD9BF243763DF00957FAD /* UIView+uikit.swift in Sources */,
+				EEAEAF8D2459DF64009FC6E7 /* Date+Foundation.swift in Sources */,
 				EE8138ED23FEDA8A005CE46D /* Bundle+ubr.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+ubr.swift in Sources */,
