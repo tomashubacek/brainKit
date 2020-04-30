@@ -13,6 +13,10 @@ extension String {
 		Data(self.utf8)
 	}
 
+	public func normalized() -> String {
+		self.folding(options: .diacriticInsensitive, locale: .current).lowercased()
+	}
+
 	public func toBase64() -> String {
 		self.data.base64EncodedString()
 	}

@@ -11,6 +11,13 @@ import XCTest
 
 final class StringExtensionsTests: XCTestCase {
 
+	func test_normalized() {
+		XCTAssertEqual("abc".normalized(), "abc")
+		XCTAssertEqual("Abc".normalized(), "abc")
+		XCTAssertEqual("ábč".normalized(), "abc")
+		XCTAssertEqual("ÄbČ".normalized(), "abc")
+	}
+
 	func testNonBreakingSpacesRemoval() {
 		let input = "x\u{00A0}y z"
 		let output = input.removingNonBreakingSpaces()
