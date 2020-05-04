@@ -53,6 +53,7 @@
 		EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8E245AA600009FC6E7 /* DateTests.swift */; };
 		EEAEAF92245AA6A6009FC6E7 /* APIDateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */; };
 		EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */; };
+		EEB7E76D2460833F00C2E1F3 /* UIImage+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		EEAEAF8E245AA600009FC6E7 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatterTests.swift; sourceTree = "<group>"; };
 		EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AVFoundation.swift"; sourceTree = "<group>"; };
+		EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 				EE8BD9BE243763DF00957FAD /* UIView+UIKit.swift */,
 				EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */,
 				EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */,
+				EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				EE35F9E223F1A02000F63697 /* URL+Foundation.swift in Sources */,
 				EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */,
 				EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */,
+				EEB7E76D2460833F00C2E1F3 /* UIImage+UIKit.swift in Sources */,
 				EE81390424013B50005CE46D /* Dictionary+Foundation.swift in Sources */,
 				EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */,
 			);
