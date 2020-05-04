@@ -52,6 +52,7 @@
 		EEAEAF8D2459DF64009FC6E7 /* Date+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */; };
 		EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8E245AA600009FC6E7 /* DateTests.swift */; };
 		EEAEAF92245AA6A6009FC6E7 /* APIDateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */; };
+		EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Foundation.swift"; sourceTree = "<group>"; };
 		EEAEAF8E245AA600009FC6E7 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatterTests.swift; sourceTree = "<group>"; };
+		EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AVFoundation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 		EE35F9C623F1981300F63697 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EEB7E7682460804900C2E1F3 /* AVFoundation */,
 				EE0A953D2456EF81008E3AD6 /* CoreData */,
 				EE0A95382456D3A9008E3AD6 /* SwiftyJSON */,
 				EE0A95342456C6A5008E3AD6 /* Foundation */,
@@ -334,6 +337,22 @@
 				EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		EEB7E7682460804900C2E1F3 /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				EEB7E76B2460831900C2E1F3 /* Extensions */,
+			);
+			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		EEB7E76B2460831900C2E1F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */,
+				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
 				EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */,
 				EE81390024010BF2005CE46D /* UIColor+UIKit.swift in Sources */,
 				EE8138E923FED60B005CE46D /* Collection+Foundation.swift in Sources */,

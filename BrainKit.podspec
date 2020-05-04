@@ -10,6 +10,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "10.0"
   s.default_subspecs = "Foundation", "UIKit"
 
+  s.subspec "AVFoundation" do |ss|
+    ss.source_files = "Sources/AVFoundation/**/*.swift"
+    ss.ios.frameworks = "AVFoundation", "UIKit"
+  end
+
   s.subspec "Foundation" do |ss|
     ss.source_files = "Sources/Foundation/**/*.swift"
     ss.ios.frameworks = "Foundation"
