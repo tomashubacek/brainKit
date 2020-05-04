@@ -54,6 +54,7 @@
 		EEAEAF92245AA6A6009FC6E7 /* APIDateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */; };
 		EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */; };
 		EEB7E76D2460833F00C2E1F3 /* UIImage+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */; };
+		EEB7E76F2460867700C2E1F3 /* FileManager+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatterTests.swift; sourceTree = "<group>"; };
 		EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AVFoundation.swift"; sourceTree = "<group>"; };
 		EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIKit.swift"; sourceTree = "<group>"; };
+		EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Foundation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				EE81390324013B50005CE46D /* Dictionary+Foundation.swift */,
 				EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */,
 				EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */,
+				EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
 				EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */,
 				EE81390024010BF2005CE46D /* UIColor+UIKit.swift in Sources */,
+				EEB7E76F2460867700C2E1F3 /* FileManager+Foundation.swift in Sources */,
 				EE8138E923FED60B005CE46D /* Collection+Foundation.swift in Sources */,
 				EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */,
 				EE35F9EC23F1B8D300F63697 /* UserDefaults+Foundation.swift in Sources */,
