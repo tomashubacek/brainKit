@@ -48,6 +48,8 @@
 		EE8BD9BF243763DF00957FAD /* UIView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9BE243763DF00957FAD /* UIView+UIKit.swift */; };
 		EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9C02437663F00957FAD /* UIFont+UIKit.swift */; };
 		EE8E6F7E2437870400E01821 /* CGFloat+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */; };
+		EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016EC2461A8240053A9C2 /* DiskStorage.swift */; };
+		EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */; };
 		EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */; };
 		EEAEAF8D2459DF64009FC6E7 /* Date+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */; };
 		EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8E245AA600009FC6E7 /* DateTests.swift */; };
@@ -117,6 +119,8 @@
 		EE8BD9BE243763DF00957FAD /* UIView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIKit.swift"; sourceTree = "<group>"; };
 		EE8BD9C02437663F00957FAD /* UIFont+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+UIKit.swift"; sourceTree = "<group>"; };
 		EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+UIKit.swift"; sourceTree = "<group>"; };
+		EEA016EC2461A8240053A9C2 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorageTests.swift; sourceTree = "<group>"; };
 		EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatter.swift; sourceTree = "<group>"; };
 		EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Foundation.swift"; sourceTree = "<group>"; };
 		EEAEAF8E245AA600009FC6E7 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
@@ -288,6 +292,7 @@
 				EE5CD96E24112BC4002C53E9 /* DictionaryExtensionsTests.swift */,
 				EEAEAF8E245AA600009FC6E7 /* DateTests.swift */,
 				EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */,
+				EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */,
+				EEA016EC2461A8240053A9C2 /* DiskStorage.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -561,6 +567,7 @@
 				EE8138ED23FEDA8A005CE46D /* Bundle+Foundation.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */,
+				EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+Foundation.swift in Sources */,
 				EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */,
 				EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */,
@@ -578,6 +585,7 @@
 				EE050DBB243F091500CB691D /* StoryboardViewController.swift in Sources */,
 				EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */,
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
+				EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */,
 				EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */,
 				EEAEAF92245AA6A6009FC6E7 /* APIDateFormatterTests.swift in Sources */,
 				EE8138FE240054BE005CE46D /* DoubleExtensionsTests.swift in Sources */,
