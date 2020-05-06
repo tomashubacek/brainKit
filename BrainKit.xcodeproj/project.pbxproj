@@ -50,6 +50,8 @@
 		EE8E6F7E2437870400E01821 /* CGFloat+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */; };
 		EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016EC2461A8240053A9C2 /* DiskStorage.swift */; };
 		EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */; };
+		EEA016F12462B1120053A9C2 /* MemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016F02462B1120053A9C2 /* MemCache.swift */; };
+		EEA016F32462B2880053A9C2 /* MemCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016F22462B2880053A9C2 /* MemCacheTests.swift */; };
 		EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */; };
 		EEAEAF8D2459DF64009FC6E7 /* Date+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */; };
 		EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAEAF8E245AA600009FC6E7 /* DateTests.swift */; };
@@ -121,6 +123,8 @@
 		EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+UIKit.swift"; sourceTree = "<group>"; };
 		EEA016EC2461A8240053A9C2 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
 		EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorageTests.swift; sourceTree = "<group>"; };
+		EEA016F02462B1120053A9C2 /* MemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemCache.swift; sourceTree = "<group>"; };
+		EEA016F22462B2880053A9C2 /* MemCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemCacheTests.swift; sourceTree = "<group>"; };
 		EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateFormatter.swift; sourceTree = "<group>"; };
 		EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Foundation.swift"; sourceTree = "<group>"; };
 		EEAEAF8E245AA600009FC6E7 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
@@ -293,6 +297,7 @@
 				EEAEAF8E245AA600009FC6E7 /* DateTests.swift */,
 				EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */,
 				EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */,
+				EEA016F22462B2880053A9C2 /* MemCacheTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 			children = (
 				EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */,
 				EEA016EC2461A8240053A9C2 /* DiskStorage.swift */,
+				EEA016F02462B1120053A9C2 /* MemCache.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -584,6 +590,7 @@
 				EE35F9EE23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift in Sources */,
 				EE050DBB243F091500CB691D /* StoryboardViewController.swift in Sources */,
 				EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */,
+				EEA016F32462B2880053A9C2 /* MemCacheTests.swift in Sources */,
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
 				EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */,
 				EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */,
@@ -593,6 +600,7 @@
 				EE5CD951240FF522002C53E9 /* SequenceExtensionsTests.swift in Sources */,
 				EE8138EF23FEE3E0005CE46D /* BundleExtensionsTests.swift in Sources */,
 				EE0A953F2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift in Sources */,
+				EEA016F12462B1120053A9C2 /* MemCache.swift in Sources */,
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
 				EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */,
