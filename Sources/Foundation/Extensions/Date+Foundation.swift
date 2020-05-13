@@ -19,4 +19,11 @@ extension Date {
 		let date = Calendar.current.date(from: components)
 		return date
 	}
+
+	public func isoDateString() -> String {
+		let formatter = DateFormatter()
+		formatter.dateFormat = "YYYY-MM-dd"
+		let string = formatter.string(from: self)
+		return string
+	}
 }

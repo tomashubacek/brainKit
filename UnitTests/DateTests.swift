@@ -28,4 +28,11 @@ final class DateTests: XCTestCase {
 		let date = Date.from(dateString: "2019") // too short
 		XCTAssertNil(date)
 	}
+
+	func test_ISODateString() {
+		let input = "2019-02-03"
+		let date = Date.from(dateString: input)!
+		let output = date.isoDateString()
+		XCTAssertEqual(input, output)
+	}
 }
