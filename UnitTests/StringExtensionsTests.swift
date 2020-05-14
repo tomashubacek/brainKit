@@ -11,56 +11,56 @@ import XCTest
 
 final class StringExtensionsTests: XCTestCase {
 
-	func test_normalized() {
+	func test_Normalized() {
 		XCTAssertEqual("abc".normalized(), "abc")
 		XCTAssertEqual("Abc".normalized(), "abc")
 		XCTAssertEqual("ábč".normalized(), "abc")
 		XCTAssertEqual("ÄbČ".normalized(), "abc")
 	}
 
-	func testNonBreakingSpacesRemoval() {
+	func test_NonBreakingSpacesRemoval() {
 		let input = "x\u{00A0}y z"
 		let output = input.removingNonBreakingSpaces()
 		XCTAssertEqual(output, "x y z")
 	}
 
-	func testNonBreakingSpacesRemovalMutating() {
+	func test_NonBreakingSpacesRemoval_Mutating() {
 		var input = "x\u{00A0}y z"
 		input.removeNonBreakingSpaces()
 		XCTAssertEqual(input, "x y z")
 	}
 
-	func testtrimmingWhitespacesAndNewlines() {
+	func test_TrimmingWhitespacesAndNewlines() {
 		let input = "\n a b c \t"
 		let output = input.trimmingWhitespacesAndNewlines()
 		XCTAssertEqual(output, "a b c")
 	}
 
-	func testtrimmingWhitespacesAndNewlinesMutating() {
+	func test_TrimmingWhitespacesAndNewlines_Mutating() {
 		var input = "\n a b c \t"
 		input.trimWhitespacesAndNewlines()
 		XCTAssertEqual(input, "a b c")
 	}
 
-	func testBase64Encode() {
+	func test_Base64Encode() {
 		let input = "hello"
 		let output = input.toBase64()
 		XCTAssertEqual(output, "aGVsbG8=")
 	}
 
-	func testBase64DecodeSuccess() {
+	func test_Base64Decode_Success() {
 		let input = "aGVsbG8="
 		let output = input.fromBase64()
 		XCTAssertEqual(output, "hello")
 	}
 
-	func testBase64DecodeFailure() {
+	func test_Base64Decode_Failure() {
 		let input = "???"
 		let output = input.fromBase64()
 		XCTAssertNil(output)
 	}
 
-	func testEmail() {
+	func test_Email() {
 			// lists based on https://gist.github.com/cjaoude/fd9910626629b53c4d25
 			XCTAssertTrue("email@example.com".isValidEmail)
 			XCTAssertTrue("firstname.lastname@example.com".isValidEmail)
