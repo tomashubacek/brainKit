@@ -22,7 +22,7 @@ extension Date {
 
 	public func isoDateString() -> String {
 		let formatter = DateFormatter()
-		formatter.dateFormat = "YYYY-MM-dd"
+		formatter.dateFormat = "yyyy-MM-dd"
 		let string = formatter.string(from: self)
 		return string
 	}
