@@ -19,7 +19,7 @@ final class MemCacheTests: XCTestCase {
 		self.cache = MemCache()
 	}
 
-	func test_insertAndRemove() {
+	func test_InsertAndRemove() {
 		let key1 = 1
 		let value1 = IndexPath(row: 1, section: 1)
 		self.cache.setValue(value1, forKey: key1)
@@ -28,7 +28,7 @@ final class MemCacheTests: XCTestCase {
 		XCTAssertNil(self.cache.value(forKey: key1))
 	}
 
-	func test_insertAndRemoveAll() {
+	func test_InsertAndRemoveAll() {
 		let key1 = 1
 		let key2 = 2
 		let value1 = IndexPath(row: 1, section: 1)
@@ -42,7 +42,7 @@ final class MemCacheTests: XCTestCase {
 		XCTAssertNil(self.cache.value(forKey: key2))
 	}
 
-	func test_subscript() {
+	func test_Subscript() {
 		let key1 = 1
 		let value1 = IndexPath(row: 1, section: 1)
 		XCTAssertNil(self.cache[key1])

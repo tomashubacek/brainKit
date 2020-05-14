@@ -11,18 +11,18 @@ import XCTest
 
 final class URLExtensionsTests: XCTestCase {
 
-	func testStaticInitSuccess() {
+	func test_StaticInit_Success() {
 		let url = URL(staticString: "https://exmaple.org")
 		XCTAssertEqual(url.absoluteString, "https://exmaple.org")
 	}
 
-	func testStaticInitFailure() {
+	func test_StaticInit_Failure() {
 		self.expectFatalError(expectedMessage: "Invalid static URL string: <>") {
 			_ = URL(staticString: "<>")
 		}
 	}
 
-	func testAppedingParams() {
+	func test_AppedingParams() {
 		let input = URL(string: "https://example.org")!
 		var output = input.appendingParam(name: "foo", value: "bar")
 		XCTAssertEqual(output.absoluteString, "https://example.org?foo=bar")

@@ -11,7 +11,7 @@ import XCTest
 
 final class UIColorExtensionsTests: XCTestCase {
 
-	func testImageFromColor() {
+	func test_ImageFromColor() {
 		// given
 		let r = 50.0
 		let g = 100.0

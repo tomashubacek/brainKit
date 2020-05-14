@@ -17,7 +17,7 @@ struct Item: Codable, Equatable {
 
 final class UserDefaultsExtensionsTests: XCTestCase {
 
-	func testSetGetObject() {
+	func test_SetAndGetObject() {
 		let input = [Item(value: "a"), Item(value: "b")]
 		let userDefaults = UserDefaults.standard
 		userDefaults.set(object: input, forKey: "data")
@@ -25,7 +25,7 @@ final class UserDefaultsExtensionsTests: XCTestCase {
 		XCTAssertEqual(input, output)
 	}
 
-	func testFailingGet() {
+	func test_GetNonexistingObject() {
 		let userDefaults = UserDefaults.standard
 		let output = userDefaults.get(objectType: Int.self, forKey: "nont-existing-key")
 		XCTAssertNil(output)

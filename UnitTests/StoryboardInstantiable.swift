@@ -12,7 +12,7 @@ import XCTest
 
 final class StoryboardInstantiableTests: XCTestCase {
 
-	func testInstantiation() {
+	func test_Instantiation() {
 		let bundle = Bundle(for: type(of: self))
 		_ = StoryboardViewController.instantiateFromStoryboard(from: bundle)
 	}

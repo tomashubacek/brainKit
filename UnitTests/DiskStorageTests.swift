@@ -38,36 +38,36 @@ final class DiskStorageTests: XCTestCase {
 		print("TEAR")
 	}
 
-	func test_existence_existing() {
+	func test_Existence_Existing() {
 		try? self.storage.saveData(self.dataContent, toFileNamed: self.fileName1)
 		let exists = self.storage.hasFile(named: self.fileName1)
 		XCTAssertTrue(exists)
 	}
 
-	func test_existence_nonexisting() {
+	func test_Existence_Nonexisting() {
 		let exists = self.storage.hasFile(named: self.nonexistingFileName)
 		XCTAssertFalse(exists)
 	}
 
-	func test_load_existing() {
+	func test_Load_Existing() {
 		try? self.storage.saveData(self.dataContent, toFileNamed: self.fileName1)
 		let data = self.storage.dataFromFile(named: self.fileName1)
 		XCTAssertEqual(self.dataContent, data)
 	}
 
-	func test_load_nonexisting() {
+	func test_Load_Nonexisting() {
 		let data = self.storage.dataFromFile(named: self.nonexistingFileName)
 		XCTAssertNil(data)
 	}
 
-	func test_removal_existing() {
+	func test_Removal_Existing() {
 		try? self.storage.saveData(self.dataContent, toFileNamed: self.fileName1)
 		XCTAssertTrue(storage.hasFile(named: self.fileName1))
 		try? self.storage.removeFile(named: self.fileName1)
 		XCTAssertFalse(storage.hasFile(named: self.fileName1))
 	}
 
-	func test_removal_nonexisting() {
+	func test_Removal_Nonexisting() {
 		do {
 			try self.storage.removeFile(named: self.nonexistingFileName)
 			XCTFail("Should throw.")
@@ -75,7 +75,7 @@ final class DiskStorageTests: XCTestCase {
 		}
 	}
 
-	func test_savingFile_existing() {
+	func test_SavingFile_Existing() {
 		try? self.storage.saveData(self.dataContent, toFileNamed: self.fileName1)
 		let url = storage.urlOfFile(named: self.fileName1)!
 		try? self.storage.saveFile(from: url, toFileNamed: self.fileName2)
@@ -83,7 +83,7 @@ final class DiskStorageTests: XCTestCase {
 		XCTAssertEqual(self.dataContent, data)
 	}
 
-	func test_savingFile_nonexisting() {
+	func test_SavingFile_Nonexisting() {
 		let url = self.storage.subdirectory.appendingPathComponent(self.nonexistingFileName)
 		do {
 			try self.storage.saveFile(from: url, toFileNamed: self.fileName2)
@@ -92,19 +92,19 @@ final class DiskStorageTests: XCTestCase {
 		}
 	}
 
-	func test_exclusionFromBackup_true() {
+	func test_ExclusionFromBackup_True() {
 		let local = try! DiskStorage(subdirectory: "test", excludeFromBackup: true)
 		let values = try! local.subdirectory.resourceValues(forKeys: [.isExcludedFromBackupKey])
 		XCTAssertTrue(values.isExcludedFromBackup!)
 	}
 
-	func test_exclusionFromBackup_false() {
+	func test_ExclusionFromBackup_False() {
 		let local = try! DiskStorage(subdirectory: "test", excludeFromBackup: false)
 		let values = try! local.subdirectory.resourceValues(forKeys: [.isExcludedFromBackupKey])
 		XCTAssertFalse(values.isExcludedFromBackup!)
 	}
 
-	func test_subdirectoryName() {
+	func test_SubdirectoryName() {
 		let local = try! DiskStorage(subdirectory: "my-subdirectory", excludeFromBackup: true)
 		let path = local.subdirectory.path
 		XCTAssertTrue(path.hasSuffix("my-subdirectory"))

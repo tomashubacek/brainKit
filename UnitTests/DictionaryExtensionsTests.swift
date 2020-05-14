@@ -11,14 +11,14 @@ import BrainKit
 import XCTest
 
 final class DictionaryExtensionsTests: XCTestCase {
-	func test_plusEqual() {
+	func test_PlusEqual() {
 		var a = ["one": 1]
 		let b = ["two": 2]
 		a += b
 		XCTAssertEqual(a, ["one": 1, "two": 2])
 	}
 
-	func test_get_existing() {
+	func test_Get_Existing() {
 		let data = [
 			"a": ["b": 123]
 		]
@@ -26,7 +26,7 @@ final class DictionaryExtensionsTests: XCTestCase {
 		XCTAssertEqual(x as? Int, 123)
 	}
 
-	func test_get_nonexisting() {
+	func test_Get_Nonexisting() {
 		let data = [
 			"a": ["b": 123]
 		]
@@ -34,7 +34,7 @@ final class DictionaryExtensionsTests: XCTestCase {
 		XCTAssertNil(x)
 	}
 
-	func test_get_wrongKeyType() {
+	func test_Get_WrongKeyType() {
 		let data = [
 			1: [2: "a"]
 		]
@@ -42,7 +42,7 @@ final class DictionaryExtensionsTests: XCTestCase {
 		XCTAssertNil(x)
 	}
 
-	func test_set_existingSameType() {
+	func test_Set_WxistingSameType() {
 		var data = [
 			"a": ["b": 123]
 		]
@@ -51,7 +51,7 @@ final class DictionaryExtensionsTests: XCTestCase {
 		XCTAssertEqual(x as? Int, 100)
 	}
 
-	func test_set_existingDifferentType() {
+	func test_Set_ExistingDifferentType() {
 		var data = [
 			"a": ["b": 123]
 		]
@@ -60,7 +60,7 @@ final class DictionaryExtensionsTests: XCTestCase {
 		XCTAssertEqual(x as? Int, 123)
 	}
 
-	func test_set_wrongKeyType() {
+	func test_Set_WrongKeyType() {
 		var data = [
 			1: [2: "a"]
 		]

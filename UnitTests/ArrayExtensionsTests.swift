@@ -13,7 +13,7 @@ import XCTest
 
 final class ArrayExtensionsTests: XCTestCase {
 
-	func test_move_wrongParams() {
+	func test_Move_WrongParams() {
 		var input = [1, 2, 3]
 
 		// from too low
@@ -33,7 +33,7 @@ final class ArrayExtensionsTests: XCTestCase {
 		XCTAssertEqual(input, [1, 2, 3])
 	}
 
-	func test_move_correctParams() {
+	func test_Move_CorrectParams() {
 		// same indexes
 		var input = [1, 2, 3]
 		input.move(from: 0, to: 0)

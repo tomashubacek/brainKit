@@ -24,37 +24,37 @@ final class BundleMock: Bundle {
 
 final class BundleExtensionsTests: XCTestCase {
 
-	func testExistingTextFileStringLoad() {
+	func test_StringLoad_ExistingTextFile() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadStringFromFile("HelloWorld.txt")
 		XCTAssertNotNil(content)
 	}
 
-	func testNonExistingFileStringLoad() {
-		let bundle = Bundle(for: type(of: self))
-		let content = bundle.loadStringFromFile("non-existing-file")
-		XCTAssertNil(content)
-	}
-
-	func testExistingBinaryFileStringLoad() {
+	func test_StringLoad_ExistingBinaryFile() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadStringFromFile("File.bin")
 		XCTAssertNil(content)
 	}
 
-	func testExistingBinaryFileDataLoad() {
+	func test_StringLoad_NonExistingFile() {
+		let bundle = Bundle(for: type(of: self))
+		let content = bundle.loadStringFromFile("non-existing-file")
+		XCTAssertNil(content)
+	}
+
+	func test_DataLoad_ExistingBinaryFile() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadDataFromFile("File.bin")
 		XCTAssertNotNil(content)
 	}
 
-	func testNonExistingFileDataLoad() {
+	func test_DataLoad_NonExistingFile() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadDataFromFile("non-existing-file")
 		XCTAssertNil(content)
 	}
 
-	func testExistingFilePlistLoad() {
+	func test_PlistLoad_ExistingFile() {
 		let bundle = Bundle(for: type(of: self))
 		guard let content = bundle.loadPlistFromFile("HelloWorld.plist") else {
 			XCTFail("Could not load plist.")
@@ -65,19 +65,13 @@ final class BundleExtensionsTests: XCTestCase {
 		XCTAssertEqual(value, "World")
 	}
 
-	func testNonExistingFilePlistLoad() {
+	func test_PlistLoad_NonExistingFile() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadPlistFromFile("non-existing-file")
 		XCTAssertNil(content)
 	}
 
-	func testNonExistingJSONLoad() {
-		let bundle = Bundle(for: type(of: self))
-		let content = bundle.loadJSONFromFile("non-existing-file")
-		XCTAssertNil(content)
-	}
-
-	func testExistingJSONLoad() {
+	func test_JSONLoad_ExistingFile() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadJSONFromFile("HelloWorld.json")
 		guard let json = content else {
@@ -87,19 +81,25 @@ final class BundleExtensionsTests: XCTestCase {
 		XCTAssertEqual(json["hello"].stringValue, "world")
 	}
 
-	func testExistingNonJSONLoad() {
+	func test_JSONLoad_ExistingNonJSONFile() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadJSONFromFile("HelloWorld.txt")
 		XCTAssertNil(content)
 	}
 
-	func testAppVersion() {
+	func test_JSONLoad_NonExistingFile() {
+		let bundle = Bundle(for: type(of: self))
+		let content = bundle.loadJSONFromFile("non-existing-file")
+		XCTAssertNil(content)
+	}
+
+	func test_AppVersion() {
 		let bundle = BundleMock()
 		let expectation = bundle.appVersion
 		XCTAssertEqual(expectation, "1.2.3")
 	}
 
-	func testBuildVersion() {
+	func test_BuildVersion() {
 		let bundle = BundleMock()
 		let expectation = bundle.buildVersion
 		XCTAssertEqual(expectation, "123")
