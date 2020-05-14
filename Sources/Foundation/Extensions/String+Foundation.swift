@@ -42,6 +42,14 @@ extension String {
 		self = self.trimmingWhitespacesAndNewlines()
 	}
 
+	public func capitalizingFirstLetter() -> String {
+		return self.prefix(1).capitalized + self.dropFirst()
+	}
+
+	public mutating func capitalizeFirstLetter() {
+		self = self.capitalizingFirstLetter()
+	}
+
 	public var isValidEmail: Bool {
 		let pattern = "\\A[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+\\z"
 		let regex = try! NSRegularExpression(pattern: pattern, options: [])

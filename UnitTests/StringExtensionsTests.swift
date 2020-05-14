@@ -30,6 +30,18 @@ final class StringExtensionsTests: XCTestCase {
 		XCTAssertEqual(input, "x y z")
 	}
 
+	func test_CapitalizingFirstLetter() {
+		let input = "hello"
+		let output = input.capitalizingFirstLetter()
+		XCTAssertEqual(output, "Hello")
+	}
+
+	func test_CapitalizingFirstLetter_Mutating() {
+		var input = "čau"
+		input.capitalizeFirstLetter()
+		XCTAssertEqual(input, "Čau")
+	}
+
 	func test_TrimmingWhitespacesAndNewlines() {
 		let input = "\n a b c \t"
 		let output = input.trimmingWhitespacesAndNewlines()
