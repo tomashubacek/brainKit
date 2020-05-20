@@ -19,6 +19,7 @@
 		EE0A953C2456DBC1008E3AD6 /* HelloWorld.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0A953B2456DBC1008E3AD6 /* HelloWorld.json */; };
 		EE0A953F2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A953E2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift */; };
 		EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */; };
+		EE3103B5247531FE007A817F /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */; };
 		EE35F9D423F1985800F63697 /* BrainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35F9BB23F1978700F63697 /* BrainKit.framework */; };
 		EE35F9DC23F1993A00F63697 /* String+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9DB23F1993A00F63697 /* String+UIKit.swift */; };
 		EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9DD23F1999000F63697 /* Data+Foundation.swift */; };
@@ -88,6 +89,7 @@
 		EE0A953B2456DBC1008E3AD6 /* HelloWorld.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HelloWorld.json; sourceTree = "<group>"; };
 		EE0A953E2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CoreData.swift"; sourceTree = "<group>"; };
 		EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+UIKit.swift"; sourceTree = "<group>"; };
+		EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionsTests.swift; sourceTree = "<group>"; };
 		EE35F9BB23F1978700F63697 /* BrainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE35F9C723F1981300F63697 /* BrainKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainKit.h; sourceTree = "<group>"; };
 		EE35F9C823F1981300F63697 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */,
 				EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */,
 				EEA016F22462B2880053A9C2 /* MemCacheTests.swift */,
+				EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
 				EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */,
 				EE050DB9243F08DA00CB691D /* StoryboardInstantiable.swift in Sources */,
+				EE3103B5247531FE007A817F /* UIViewExtensionsTests.swift in Sources */,
 				EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

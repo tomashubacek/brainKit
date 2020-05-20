@@ -10,6 +10,11 @@ import UIKit
 
 extension UIView {
 
+	public func forAurolayout() -> Self {
+		self.translatesAutoresizingMaskIntoConstraints = false
+		return self
+	}
+
 	public func setShadow(withColor color: UIColor, opacity: Float, xOffset: Int, yOffset: Int, radius: CGFloat) {
 		self.layer.shadowColor = color.cgColor
 		self.layer.shadowOpacity = opacity
