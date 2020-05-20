@@ -72,6 +72,17 @@ final class StringExtensionsTests: XCTestCase {
 		XCTAssertNil(output)
 	}
 
+	func test_ReversedDomain() {
+		let inputs = ["", "ab", "ab.ba", "a..b", "a.b.c"]
+		let expectations = ["", "ab", "ba.ab", "b..a", "c.b.a"]
+		for i in 0 ..< inputs.count {
+			let input = inputs[i]
+			let expectation = expectations[i]
+			let output = input.reversedDomain()
+			XCTAssertEqual(output, expectation)
+		}
+	}
+
 	func test_Email() {
 			// lists based on https://gist.github.com/cjaoude/fd9910626629b53c4d25
 			XCTAssertTrue("email@example.com".isValidEmail)

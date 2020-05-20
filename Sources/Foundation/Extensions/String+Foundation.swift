@@ -50,6 +50,10 @@ extension String {
 		self = self.capitalizingFirstLetter()
 	}
 
+	public func reversedDomain() -> String {
+		return self.components(separatedBy: ".").reversed().joined(separator: ".")
+	}
+
 	public var isValidEmail: Bool {
 		let pattern = "\\A[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+\\z"
 		let regex = try! NSRegularExpression(pattern: pattern, options: [])
