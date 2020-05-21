@@ -15,14 +15,19 @@ Pod::Spec.new do |s|
     ss.ios.frameworks = "AVFoundation", "UIKit"
   end
 
+  s.subspec "CoreData" do |ss|
+    ss.source_files = "Sources/CoreData/**/*.swift"
+    ss.ios.frameworks = "Coredata"
+  end
+
   s.subspec "Foundation" do |ss|
     ss.source_files = "Sources/Foundation/**/*.swift"
     ss.ios.frameworks = "Foundation"
   end
 
-  s.subspec "UIKit" do |ss|
-    ss.source_files = "Sources/UIKit/**/*.swift"
-    ss.ios.frameworks = "UIKit"
+  s.subspec "SafariServices" do |ss|
+    ss.source_files = "Sources/SafariServices/**/*.swift"
+    ss.ios.frameworks = "SafariServices"
   end
 
   s.subspec "SwiftyJSON" do |ss|
@@ -31,8 +36,8 @@ Pod::Spec.new do |s|
     ss.dependency "SwiftyJSON", "~> 5"
   end
 
-  s.subspec "CoreData" do |ss|
-    ss.source_files = "Sources/CoreData/**/*.swift"
-    ss.ios.frameworks = "Coredata"
+  s.subspec "UIKit" do |ss|
+    ss.source_files = "Sources/UIKit/**/*.swift"
+    ss.ios.frameworks = "UIKit"
   end
 end
