@@ -21,6 +21,7 @@
 		EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */; };
 		EE3103B5247531FE007A817F /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */; };
 		EE3103C6247673F1007A817F /* UIViewController+SafariServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103C5247673F1007A817F /* UIViewController+SafariServices.swift */; };
+		EE3103D724771AF8007A817F /* UIAlertController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103D624771AF8007A817F /* UIAlertController+UIKit.swift */; };
 		EE35F9D423F1985800F63697 /* BrainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35F9BB23F1978700F63697 /* BrainKit.framework */; };
 		EE35F9DC23F1993A00F63697 /* String+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9DB23F1993A00F63697 /* String+UIKit.swift */; };
 		EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9DD23F1999000F63697 /* Data+Foundation.swift */; };
@@ -92,6 +93,7 @@
 		EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+UIKit.swift"; sourceTree = "<group>"; };
 		EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionsTests.swift; sourceTree = "<group>"; };
 		EE3103C5247673F1007A817F /* UIViewController+SafariServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SafariServices.swift"; sourceTree = "<group>"; };
+		EE3103D624771AF8007A817F /* UIAlertController+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+UIKit.swift"; sourceTree = "<group>"; };
 		EE35F9BB23F1978700F63697 /* BrainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE35F9C723F1981300F63697 /* BrainKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainKit.h; sourceTree = "<group>"; };
 		EE35F9C823F1981300F63697 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */,
 				EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */,
 				EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */,
+				EE3103D624771AF8007A817F /* UIAlertController+UIKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */,
 				EEA016F32462B2880053A9C2 /* MemCacheTests.swift in Sources */,
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
+				EE3103D724771AF8007A817F /* UIAlertController+UIKit.swift in Sources */,
 				EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */,
 				EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */,
 				EEAEAF92245AA6A6009FC6E7 /* APIDateFormatterTests.swift in Sources */,
