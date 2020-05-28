@@ -51,6 +51,8 @@
 		EE8BD9BF243763DF00957FAD /* UIView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9BE243763DF00957FAD /* UIView+UIKit.swift */; };
 		EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8BD9C02437663F00957FAD /* UIFont+UIKit.swift */; };
 		EE8E6F7E2437870400E01821 /* CGFloat+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */; };
+		EE9F211F247FE309000C3120 /* NSOrderedSet+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F211E247FE309000C3120 /* NSOrderedSet+Foundation.swift */; };
+		EE9F2121247FE339000C3120 /* NSOrderedSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */; };
 		EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016EC2461A8240053A9C2 /* DiskStorage.swift */; };
 		EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */; };
 		EEA016F12462B1120053A9C2 /* MemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016F02462B1120053A9C2 /* MemCache.swift */; };
@@ -127,6 +129,8 @@
 		EE8BD9BE243763DF00957FAD /* UIView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIKit.swift"; sourceTree = "<group>"; };
 		EE8BD9C02437663F00957FAD /* UIFont+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+UIKit.swift"; sourceTree = "<group>"; };
 		EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+UIKit.swift"; sourceTree = "<group>"; };
+		EE9F211E247FE309000C3120 /* NSOrderedSet+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSOrderedSet+Foundation.swift"; sourceTree = "<group>"; };
+		EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSOrderedSetTests.swift; sourceTree = "<group>"; };
 		EEA016EC2461A8240053A9C2 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
 		EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorageTests.swift; sourceTree = "<group>"; };
 		EEA016F02462B1120053A9C2 /* MemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemCache.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 				EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */,
 				EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */,
 				EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */,
+				EE9F211E247FE309000C3120 /* NSOrderedSet+Foundation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */,
 				EEA016F22462B2880053A9C2 /* MemCacheTests.swift */,
 				EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */,
+				EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -572,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9F211F247FE309000C3120 /* NSOrderedSet+Foundation.swift in Sources */,
 				EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */,
 				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
 				EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */,
@@ -623,6 +630,7 @@
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
 				EE8138FA24003B89005CE46D /* XCTestCase+Fatals.swift in Sources */,
+				EE9F2121247FE339000C3120 /* NSOrderedSetTests.swift in Sources */,
 				EE050DB9243F08DA00CB691D /* StoryboardInstantiable.swift in Sources */,
 				EE3103B5247531FE007A817F /* UIViewExtensionsTests.swift in Sources */,
 				EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */,
