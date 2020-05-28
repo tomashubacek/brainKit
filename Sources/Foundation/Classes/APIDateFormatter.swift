@@ -10,17 +10,14 @@ import Foundation
 
 @available(iOS 11, *)
 final public class APIDateFormatter: ISO8601DateFormatter {
+	public static let shared = APIDateFormatter()
+
 	override public init() {
 		super.init()
-		self.setup()
+		self.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
 	}
 
 	required init?(coder: NSCoder) {
-		super.init(coder: coder)
-		self.setup()
-	}
-
-	private func setup() {
-		self.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+		fatalError("init(coder:) has not been implemented")
 	}
 }
