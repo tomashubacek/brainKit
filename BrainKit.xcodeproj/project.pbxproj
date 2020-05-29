@@ -54,6 +54,8 @@
 		EE9F211F247FE309000C3120 /* NSOrderedSet+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F211E247FE309000C3120 /* NSOrderedSet+Foundation.swift */; };
 		EE9F2121247FE339000C3120 /* NSOrderedSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */; };
 		EE9F2123247FE765000C3120 /* UIWindow+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F2122247FE765000C3120 /* UIWindow+UIKit.swift */; };
+		EE9F212524810FB3000C3120 /* Optional+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F212424810FB3000C3120 /* Optional+Foundation.swift */; };
+		EE9F21272481100D000C3120 /* OptionalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F21262481100D000C3120 /* OptionalExtensionsTests.swift */; };
 		EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016EC2461A8240053A9C2 /* DiskStorage.swift */; };
 		EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */; };
 		EEA016F12462B1120053A9C2 /* MemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA016F02462B1120053A9C2 /* MemCache.swift */; };
@@ -133,6 +135,8 @@
 		EE9F211E247FE309000C3120 /* NSOrderedSet+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSOrderedSet+Foundation.swift"; sourceTree = "<group>"; };
 		EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSOrderedSetTests.swift; sourceTree = "<group>"; };
 		EE9F2122247FE765000C3120 /* UIWindow+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+UIKit.swift"; sourceTree = "<group>"; };
+		EE9F212424810FB3000C3120 /* Optional+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Foundation.swift"; sourceTree = "<group>"; };
+		EE9F21262481100D000C3120 /* OptionalExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtensionsTests.swift; sourceTree = "<group>"; };
 		EEA016EC2461A8240053A9C2 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
 		EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorageTests.swift; sourceTree = "<group>"; };
 		EEA016F02462B1120053A9C2 /* MemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemCache.swift; sourceTree = "<group>"; };
@@ -229,6 +233,7 @@
 				EEAEAF8C2459DF64009FC6E7 /* Date+Foundation.swift */,
 				EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */,
 				EE9F211E247FE309000C3120 /* NSOrderedSet+Foundation.swift */,
+				EE9F212424810FB3000C3120 /* Optional+Foundation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				EEA016F22462B2880053A9C2 /* MemCacheTests.swift */,
 				EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */,
 				EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */,
+				EE9F21262481100D000C3120 /* OptionalExtensionsTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -621,6 +627,7 @@
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
 				EE3103D724771AF8007A817F /* UIAlertController+UIKit.swift in Sources */,
 				EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */,
+				EE9F21272481100D000C3120 /* OptionalExtensionsTests.swift in Sources */,
 				EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */,
 				EEAEAF92245AA6A6009FC6E7 /* APIDateFormatterTests.swift in Sources */,
 				EE8138FE240054BE005CE46D /* DoubleExtensionsTests.swift in Sources */,
@@ -629,6 +636,7 @@
 				EE8138EF23FEE3E0005CE46D /* BundleExtensionsTests.swift in Sources */,
 				EE0A953F2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift in Sources */,
 				EE9F2123247FE765000C3120 /* UIWindow+UIKit.swift in Sources */,
+				EE9F212524810FB3000C3120 /* Optional+Foundation.swift in Sources */,
 				EE3103C6247673F1007A817F /* UIViewController+SafariServices.swift in Sources */,
 				EEA016F12462B1120053A9C2 /* MemCache.swift in Sources */,
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
