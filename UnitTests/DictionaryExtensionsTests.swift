@@ -18,6 +18,13 @@ final class DictionaryExtensionsTests: XCTestCase {
 		XCTAssertEqual(a, ["one": 1, "two": 2])
 	}
 
+	func test_Plus() {
+		let a = ["one": 1]
+		let b = ["two": 2]
+		let c = a + b
+		XCTAssertEqual(c, ["one": 1, "two": 2])
+	}
+
 	func test_Get_Existing() {
 		let data = [
 			"a": ["b": 123]

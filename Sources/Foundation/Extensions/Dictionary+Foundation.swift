@@ -15,6 +15,12 @@ extension Dictionary {
 		rhs.forEach { lhs[$0] = $1 }
 	}
 
+	public static func + (lhs: [Key : Value], rhs: [Key : Value]) -> [Key : Value] {
+		var result = lhs
+		result += rhs
+		return result
+	}
+
 	public mutating func setValue(val: Any, forKeyPath keyPath: String) {
 		var keys = keyPath.components(separatedBy: ".")
 		guard let first = keys.first as? Key else {
