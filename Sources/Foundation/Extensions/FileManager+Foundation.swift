@@ -14,4 +14,14 @@ extension FileManager {
 		let size = attr[FileAttributeKey.size] as? UInt64 ?? 0
 		return size
 	}
+
+	public func documentsDirectory() -> URL {
+		let paths = self.urls(for: .documentDirectory, in: .userDomainMask)
+		let documentsDirectory = paths[0]
+		return documentsDirectory
+	}
+
+	public func temporaryDirectory() -> URL {
+		return URL(fileURLWithPath: NSTemporaryDirectory())
+	}
 }
