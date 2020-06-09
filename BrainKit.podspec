@@ -40,4 +40,9 @@ Pod::Spec.new do |s|
     ss.source_files = "Sources/UIKit/**/*.swift"
     ss.ios.frameworks = "UIKit"
   end
+
+  s.subspec "WebKit" do |ss|
+    ss.source_files = "Sources/WebKit/**/*.swift"
+    ss.ios.frameworks = "WebKit", "UIKit"
+  end
 end

@@ -67,6 +67,8 @@
 		EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */; };
 		EEB7E76D2460833F00C2E1F3 /* UIImage+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */; };
 		EEB7E76F2460867700C2E1F3 /* FileManager+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */; };
+		EED785612489374E009960EE /* NSLocale+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED785602489374E009960EE /* NSLocale+UIKit.swift */; };
+		EEE3CEDB248F8DD300983BE5 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +150,8 @@
 		EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AVFoundation.swift"; sourceTree = "<group>"; };
 		EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIKit.swift"; sourceTree = "<group>"; };
 		EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Foundation.swift"; sourceTree = "<group>"; };
+		EED785602489374E009960EE /* NSLocale+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocale+UIKit.swift"; sourceTree = "<group>"; };
+		EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +304,7 @@
 				EE0A95382456D3A9008E3AD6 /* SwiftyJSON */,
 				EE0A95342456C6A5008E3AD6 /* Foundation */,
 				EE0A95332456C68D008E3AD6 /* UIKit */,
+				EEE3CED8248F8DD300983BE5 /* WebKit */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 				EE8138FF24010BF2005CE46D /* UIColor+UIKit.swift */,
 				EE8BD9BE243763DF00957FAD /* UIView+UIKit.swift */,
 				EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */,
+				EED785602489374E009960EE /* NSLocale+UIKit.swift */,
 				EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */,
 				EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */,
 				EE3103D624771AF8007A817F /* UIAlertController+UIKit.swift */,
@@ -403,6 +409,22 @@
 				EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEE3CED8248F8DD300983BE5 /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CED9248F8DD300983BE5 /* Classes */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
+		EEE3CED9248F8DD300983BE5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -594,6 +616,7 @@
 				EE81390024010BF2005CE46D /* UIColor+UIKit.swift in Sources */,
 				EEB7E76F2460867700C2E1F3 /* FileManager+Foundation.swift in Sources */,
 				EE8138E923FED60B005CE46D /* Collection+Foundation.swift in Sources */,
+				EED785612489374E009960EE /* NSLocale+UIKit.swift in Sources */,
 				EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */,
 				EE35F9EC23F1B8D300F63697 /* UserDefaults+Foundation.swift in Sources */,
 				EE8138FC240054A7005CE46D /* Double+Foundation.swift in Sources */,
@@ -603,6 +626,7 @@
 				EE050DB7243F087D00CB691D /* StoryboardInstantiable.swift in Sources */,
 				EE8BD9BF243763DF00957FAD /* UIView+UIKit.swift in Sources */,
 				EEAEAF8D2459DF64009FC6E7 /* Date+Foundation.swift in Sources */,
+				EEE3CEDB248F8DD300983BE5 /* PDFCreator.swift in Sources */,
 				EE8138ED23FEDA8A005CE46D /* Bundle+Foundation.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */,
