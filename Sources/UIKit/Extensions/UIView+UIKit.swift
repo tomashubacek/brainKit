@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
 
-	public func forAurolayout() -> Self {
+	public func forAutolayout() -> Self {
 		self.translatesAutoresizingMaskIntoConstraints = false
 		return self
 	}
