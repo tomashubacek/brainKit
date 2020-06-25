@@ -18,6 +18,8 @@
 		EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A95392456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift */; };
 		EE0A953C2456DBC1008E3AD6 /* HelloWorld.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0A953B2456DBC1008E3AD6 /* HelloWorld.json */; };
 		EE0A953F2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A953E2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift */; };
+		EE24343224A49A4E008B061D /* FloatingPoint+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24343124A49A4E008B061D /* FloatingPoint+Foundation.swift */; };
+		EE24343424A49B23008B061D /* FloatingPointExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */; };
 		EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */; };
 		EE3103B5247531FE007A817F /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */; };
 		EE3103C6247673F1007A817F /* UIViewController+SafariServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103C5247673F1007A817F /* UIViewController+SafariServices.swift */; };
@@ -97,6 +99,8 @@
 		EE0A95392456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		EE0A953B2456DBC1008E3AD6 /* HelloWorld.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HelloWorld.json; sourceTree = "<group>"; };
 		EE0A953E2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CoreData.swift"; sourceTree = "<group>"; };
+		EE24343124A49A4E008B061D /* FloatingPoint+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Foundation.swift"; sourceTree = "<group>"; };
+		EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPointExtensionsTests.swift; sourceTree = "<group>"; };
 		EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+UIKit.swift"; sourceTree = "<group>"; };
 		EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionsTests.swift; sourceTree = "<group>"; };
 		EE3103C5247673F1007A817F /* UIViewController+SafariServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SafariServices.swift"; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 				EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */,
 				EE9F211E247FE309000C3120 /* NSOrderedSet+Foundation.swift */,
 				EE9F212424810FB3000C3120 /* Optional+Foundation.swift */,
+				EE24343124A49A4E008B061D /* FloatingPoint+Foundation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				EE8138F023FEE3FC005CE46D /* Resources */,
 				EE35F9D323F1985800F63697 /* Info.plist */,
 				EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */,
+				EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */,
 				EE35F9DF23F19E0200F63697 /* StringExtensionsTests.swift */,
 				EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */,
 				EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */,
@@ -609,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE24343224A49A4E008B061D /* FloatingPoint+Foundation.swift in Sources */,
 				EE9F211F247FE309000C3120 /* NSOrderedSet+Foundation.swift in Sources */,
 				EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */,
 				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
@@ -658,6 +665,7 @@
 				EE5CD96F24112BC4002C53E9 /* DictionaryExtensionsTests.swift in Sources */,
 				EE5CD951240FF522002C53E9 /* SequenceExtensionsTests.swift in Sources */,
 				EE8138EF23FEE3E0005CE46D /* BundleExtensionsTests.swift in Sources */,
+				EE24343424A49B23008B061D /* FloatingPointExtensionsTests.swift in Sources */,
 				EE0A953F2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift in Sources */,
 				EE9F2123247FE765000C3120 /* UIWindow+UIKit.swift in Sources */,
 				EE9F212524810FB3000C3120 /* Optional+Foundation.swift in Sources */,
