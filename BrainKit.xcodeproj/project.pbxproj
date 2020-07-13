@@ -37,6 +37,8 @@
 		EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */; };
 		EE5CD951240FF522002C53E9 /* SequenceExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD950240FF522002C53E9 /* SequenceExtensionsTests.swift */; };
 		EE5CD96F24112BC4002C53E9 /* DictionaryExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD96E24112BC4002C53E9 /* DictionaryExtensionsTests.swift */; };
+		EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE663A6724BC3EDF00366C27 /* Functions.swift */; };
+		EE663A6A24BC3EEE00366C27 /* Bool+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE663A6924BC3EEE00366C27 /* Bool+Foundation.swift */; };
 		EE8138E923FED60B005CE46D /* Collection+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138E823FED60B005CE46D /* Collection+Foundation.swift */; };
 		EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */; };
 		EE8138ED23FEDA8A005CE46D /* Bundle+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138EC23FEDA8A005CE46D /* Bundle+Foundation.swift */; };
@@ -122,6 +124,8 @@
 		EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Foundation.swift"; sourceTree = "<group>"; };
 		EE5CD950240FF522002C53E9 /* SequenceExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensionsTests.swift; sourceTree = "<group>"; };
 		EE5CD96E24112BC4002C53E9 /* DictionaryExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionsTests.swift; sourceTree = "<group>"; };
+		EE663A6724BC3EDF00366C27 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		EE663A6924BC3EEE00366C27 /* Bool+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Foundation.swift"; sourceTree = "<group>"; };
 		EE8138E823FED60B005CE46D /* Collection+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Foundation.swift"; sourceTree = "<group>"; };
 		EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensionsTests.swift; sourceTree = "<group>"; };
 		EE8138EC23FEDA8A005CE46D /* Bundle+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Foundation.swift"; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 			children = (
 				EE0A95352456C6B2008E3AD6 /* Extensions */,
 				EEAEAF8324596A41009FC6E7 /* Classes */,
+				EE663A6724BC3EDF00366C27 /* Functions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 		EE0A95352456C6B2008E3AD6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EE663A6924BC3EEE00366C27 /* Bool+Foundation.swift */,
 				EE0A95362456C749008E3AD6 /* String+Foundation.swift */,
 				EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */,
 				EE8138EC23FEDA8A005CE46D /* Bundle+Foundation.swift */,
@@ -627,6 +633,7 @@
 				EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */,
 				EE35F9EC23F1B8D300F63697 /* UserDefaults+Foundation.swift in Sources */,
 				EE8138FC240054A7005CE46D /* Double+Foundation.swift in Sources */,
+				EE663A6A24BC3EEE00366C27 /* Bool+Foundation.swift in Sources */,
 				EE0A95372456C749008E3AD6 /* String+Foundation.swift in Sources */,
 				EE8E6F7E2437870400E01821 /* CGFloat+UIKit.swift in Sources */,
 				EE35F9DC23F1993A00F63697 /* String+UIKit.swift in Sources */,
@@ -638,6 +645,7 @@
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */,
 				EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */,
+				EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+Foundation.swift in Sources */,
 				EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */,
 				EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */,
