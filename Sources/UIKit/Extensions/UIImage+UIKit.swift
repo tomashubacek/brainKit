@@ -9,8 +9,7 @@
 import UIKit
 
 extension UIImage {
-	/// Also upscales if given size is greater then the actual one.
-	public func resized(toFit newSize: CGSize) -> UIImage {
+	public func resized(toFit newSize: CGSize, upscale: Bool) -> UIImage {
 		// original metrics
 		let outWidth = newSize.width
 		let outHeight = newSize.height
@@ -20,7 +19,10 @@ extension UIImage {
 		let heightRatio = outHeight / originalHeight
 
 		// new metrics
-		let ratio = min(widthRatio, heightRatio)
+		var ratio = min(widthRatio, heightRatio)
+		if (upscale == false) {
+			ratio = min(1, ratio)
+		}
 		let newWidth = ratio * originalWidth
 		let newHeight = ratio * originalHeight
 		let newSize = CGSize(width: newWidth, height: newHeight)
