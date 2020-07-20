@@ -15,6 +15,13 @@ extension FileManager {
 		return size
 	}
 
+	public func formattedSizeOfFile(at url: URL) -> String {
+		let diskSize = try? self.sizeOfFile(at: url)
+		let byteCount = Int64(diskSize ?? 0)
+		let formatedSize = ByteCountFormatter.string(fromByteCount: byteCount, countStyle: .decimal)
+		return formatedSize
+	}
+
 	public func documentsDirectory() -> URL {
 		let paths = self.urls(for: .documentDirectory, in: .userDomainMask)
 		let documentsDirectory = paths[0]
