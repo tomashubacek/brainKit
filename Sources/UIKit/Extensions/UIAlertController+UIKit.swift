@@ -13,6 +13,10 @@ extension UIAlertController {
 		return UIAlertController(title: title, message: message, preferredStyle: .alert)
 	}
 
+	public static func makeActionSheet(title: String?, message: String?) -> UIAlertController {
+		return UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+	}
+
 	@discardableResult
 	public func addAction(title: String, style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)?) -> UIAlertAction {
 		let action = UIAlertAction(title: title, style: style, handler: handler)
