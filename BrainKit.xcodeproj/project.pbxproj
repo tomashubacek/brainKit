@@ -71,6 +71,9 @@
 		EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */; };
 		EEB7E76D2460833F00C2E1F3 /* UIImage+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */; };
 		EEB7E76F2460867700C2E1F3 /* FileManager+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */; };
+		EEC01D6D24DC4A4600318B46 /* UILabel+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D6C24DC4A4600318B46 /* UILabel+UIKit.swift */; };
+		EEC01D6F24DC4B9700318B46 /* UIStackView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D6E24DC4B9700318B46 /* UIStackView+UIKit.swift */; };
+		EEC01D7124DC4C5600318B46 /* UIScrollView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */; };
 		EED785612489374E009960EE /* NSLocale+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED785602489374E009960EE /* NSLocale+UIKit.swift */; };
 		EEE3CEDB248F8DD300983BE5 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */; };
 /* End PBXBuildFile section */
@@ -158,6 +161,9 @@
 		EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AVFoundation.swift"; sourceTree = "<group>"; };
 		EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIKit.swift"; sourceTree = "<group>"; };
 		EEB7E76E2460867700C2E1F3 /* FileManager+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Foundation.swift"; sourceTree = "<group>"; };
+		EEC01D6C24DC4A4600318B46 /* UILabel+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+UIKit.swift"; sourceTree = "<group>"; };
+		EEC01D6E24DC4B9700318B46 /* UIStackView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+UIKit.swift"; sourceTree = "<group>"; };
+		EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+UIKit.swift"; sourceTree = "<group>"; };
 		EED785602489374E009960EE /* NSLocale+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocale+UIKit.swift"; sourceTree = "<group>"; };
 		EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -353,7 +359,9 @@
 			isa = PBXGroup;
 			children = (
 				EE35F9DB23F1993A00F63697 /* String+UIKit.swift */,
+				EEC01D6E24DC4B9700318B46 /* UIStackView+UIKit.swift */,
 				EE8BD9C02437663F00957FAD /* UIFont+UIKit.swift */,
+				EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */,
 				EE8138FF24010BF2005CE46D /* UIColor+UIKit.swift */,
 				EE8BD9BE243763DF00957FAD /* UIView+UIKit.swift */,
 				EE8E6F7D2437870400E01821 /* CGFloat+UIKit.swift */,
@@ -362,6 +370,7 @@
 				EEB7E76C2460833F00C2E1F3 /* UIImage+UIKit.swift */,
 				EE3103D624771AF8007A817F /* UIAlertController+UIKit.swift */,
 				EE9F2122247FE765000C3120 /* UIWindow+UIKit.swift */,
+				EEC01D6C24DC4A4600318B46 /* UILabel+UIKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -622,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE24343224A49A4E008B061D /* FloatingPoint+Foundation.swift in Sources */,
+				EEC01D6F24DC4B9700318B46 /* UIStackView+UIKit.swift in Sources */,
 				EE9F211F247FE309000C3120 /* NSOrderedSet+Foundation.swift in Sources */,
 				EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */,
 				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
@@ -642,6 +652,7 @@
 				EEAEAF8D2459DF64009FC6E7 /* Date+Foundation.swift in Sources */,
 				EEE3CEDB248F8DD300983BE5 /* PDFCreator.swift in Sources */,
 				EE8138ED23FEDA8A005CE46D /* Bundle+Foundation.swift in Sources */,
+				EEC01D7124DC4C5600318B46 /* UIScrollView+UIKit.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */,
 				EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */,
@@ -650,6 +661,7 @@
 				EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */,
 				EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */,
 				EEB7E76D2460833F00C2E1F3 /* UIImage+UIKit.swift in Sources */,
+				EEC01D6D24DC4A4600318B46 /* UILabel+UIKit.swift in Sources */,
 				EE81390424013B50005CE46D /* Dictionary+Foundation.swift in Sources */,
 				EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */,
 			);
