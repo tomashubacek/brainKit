@@ -28,7 +28,8 @@ extension UIImage {
 		let newSize = CGSize(width: newWidth, height: newHeight)
 
 		// render
-		let renderFormat = UIGraphicsImageRendererFormat.default()
+		let renderFormat = UIGraphicsImageRendererFormat()
+		renderFormat.scale = 1
 		renderFormat.opaque = false
 		let renderer = UIGraphicsImageRenderer(size: newSize, format: renderFormat)
 		let newImage = renderer.image { [weak self] _ in
