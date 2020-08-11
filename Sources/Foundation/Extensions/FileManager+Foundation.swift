@@ -9,16 +9,15 @@
 import Foundation
 
 extension FileManager {
-	public func sizeOfFile(at url: URL) throws -> UInt64 {
-		let attr = try self.attributesOfItem(atPath: url.path)
-		let size = attr[FileAttributeKey.size] as? UInt64 ?? 0
+	public func sizeOfFile(at url: URL) -> UInt64 {
+		let attr = try? self.attributesOfItem(atPath: url.path)
+		let size = attr?[FileAttributeKey.size] as? UInt64 ?? 0
 		return size
 	}
 
 	public func formattedSizeOfFile(at url: URL) -> String {
-		let diskSize = try? self.sizeOfFile(at: url)
-		let byteCount = Int64(diskSize ?? 0)
-		let formatedSize = ByteCountFormatter.string(fromByteCount: byteCount, countStyle: .decimal)
+		let diskSize = Int64(self.sizeOfFile(at: url))
+		let formatedSize = ByteCountFormatter.string(fromByteCount: diskSize, countStyle: .decimal)
 		return formatedSize
 	}
 
