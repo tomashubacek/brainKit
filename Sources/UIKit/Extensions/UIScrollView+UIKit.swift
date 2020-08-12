@@ -10,11 +10,15 @@ import UIKit
 
 extension UIScrollView {
 	public var currentPage: Int {
-		Int(round(self.contentOffset.x / self.frame.width))
+		let width = self.frame.width
+		guard width > 0 else { return 0 }
+		return Int(round(self.contentOffset.x / width))
 	}
 
 	public var pagesCount: Int {
-		Int(round(self.contentSize.width / self.frame.width))
+		let width = self.frame.width
+		guard width > 0 else { return 0 }
+		return Int(round(self.contentSize.width / width))
 	}
 
 	public func scrollToPage(_ page: Int, animated: Bool) {
