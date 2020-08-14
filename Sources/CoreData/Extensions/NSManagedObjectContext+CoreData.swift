@@ -34,7 +34,7 @@ extension NSManagedObjectContext {
 		}
 	}
 
-	public func saveIfNeeded () {
+	public func saveIfNeeded() {
 		guard self.hasChanges else { return }
 		do {
 			try self.save()
