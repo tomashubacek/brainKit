@@ -39,7 +39,9 @@ extension NSManagedObjectContext {
 		do {
 			try self.save()
 		} catch {
-			fatalError("Error saving context: \(error.localizedDescription)")
+			#if DEBUG
+			print("Error saving context: \(error.localizedDescription)")
+			#endif
 		}
 	}
 }
