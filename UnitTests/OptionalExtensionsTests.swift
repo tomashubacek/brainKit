@@ -19,4 +19,15 @@ final class OptionalExtensionsTests: XCTestCase {
 		b ||= "assignment"
 		XCTAssertEqual(b, "initial value")
 	}
+
+	func test_isNilOrEmpty() {
+		let nilStr: String? = nil
+		XCTAssertTrue(nilStr.isNilOrEmpty)
+
+		let emptyStr: String? = ""
+		XCTAssertTrue(emptyStr.isNilOrEmpty)
+
+		let str: String? = "str"
+		XCTAssertFalse(str.isNilOrEmpty)
+	}
 }
