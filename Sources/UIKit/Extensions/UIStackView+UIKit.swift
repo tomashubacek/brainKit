@@ -16,4 +16,10 @@ extension UIStackView {
 	public func removeAllArrangedSubviews() {
 		self.arrangedSubviews.forEach { self.removeArrangedSubview($0) }
 	}
+
+	@available(iOS 11, *)
+	public func setPadding(top: CGFloat = 0, leading: CGFloat = 0, bottom: CGFloat = 0, trailing: CGFloat = 0) {
+		self.isLayoutMarginsRelativeArrangement = true
+		self.directionalLayoutMargins = NSDirectionalEdgeInsets(top: top, leading: leading, bottom: bottom, trailing: trailing)
+	}
 }
