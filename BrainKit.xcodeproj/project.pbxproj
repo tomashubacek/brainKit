@@ -75,6 +75,7 @@
 		EEC01D6F24DC4B9700318B46 /* UIStackView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D6E24DC4B9700318B46 /* UIStackView+UIKit.swift */; };
 		EEC01D7124DC4C5600318B46 /* UIScrollView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */; };
 		EED785612489374E009960EE /* NSLocale+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED785602489374E009960EE /* NSLocale+UIKit.swift */; };
+		EEDEF33D250F9C0F00588359 /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEF33C250F9C0F00588359 /* PriceFormatter.swift */; };
 		EEE3CEDB248F8DD300983BE5 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +166,7 @@
 		EEC01D6E24DC4B9700318B46 /* UIStackView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+UIKit.swift"; sourceTree = "<group>"; };
 		EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+UIKit.swift"; sourceTree = "<group>"; };
 		EED785602489374E009960EE /* NSLocale+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocale+UIKit.swift"; sourceTree = "<group>"; };
+		EEDEF33C250F9C0F00588359 /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
 		EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -412,6 +414,7 @@
 				EEAEAF81245969FB009FC6E7 /* APIDateFormatter.swift */,
 				EEA016EC2461A8240053A9C2 /* DiskStorage.swift */,
 				EEA016F02462B1120053A9C2 /* MemCache.swift */,
+				EEDEF33C250F9C0F00588359 /* PriceFormatter.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -632,6 +635,7 @@
 			files = (
 				EE24343224A49A4E008B061D /* FloatingPoint+Foundation.swift in Sources */,
 				EEC01D6F24DC4B9700318B46 /* UIStackView+UIKit.swift in Sources */,
+				EEDEF33D250F9C0F00588359 /* PriceFormatter.swift in Sources */,
 				EE9F211F247FE309000C3120 /* NSOrderedSet+Foundation.swift in Sources */,
 				EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */,
 				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
