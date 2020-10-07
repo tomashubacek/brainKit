@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.authors = {"Ondrej Hanak" => "oh@ondrejhanak.cz", "Jakub Heglas" => "jakub@userbrain.co"}
   s.source = {:git => "https://bitbucket.org/userbrain/brainkit.git", :tag => s.version.to_s}
   s.ios.deployment_target = "10.0"
+  s.watchos.deployment_target = "5.0"
   s.default_subspecs = "Foundation", "UIKit"
 
   s.subspec "AVFoundation" do |ss|
