@@ -30,4 +30,15 @@ final class OptionalExtensionsTests: XCTestCase {
 		let str: String? = "str"
 		XCTAssertFalse(str.isNilOrEmpty)
 	}
+
+	func test_nilIfEmpty() {
+		let nilStr: String? = nil
+		XCTAssertNil(nilStr.nilIfEmpty)
+
+		let emptyStr: String? = ""
+		XCTAssertNil(emptyStr.nilIfEmpty)
+
+		let str: String? = "str"
+		XCTAssertEqual(str.nilIfEmpty, str)
+	}
 }

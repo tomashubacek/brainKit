@@ -23,3 +23,12 @@ extension Optional where Wrapped: Collection {
 		self?.isEmpty ?? true
 	}
 }
+
+extension Optional where Wrapped == String {
+  public var nilIfEmpty: String? {
+    if self?.isEmpty == true {
+    	return nil
+    }
+    return self
+  }
+}
