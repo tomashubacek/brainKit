@@ -41,4 +41,15 @@ final class OptionalExtensionsTests: XCTestCase {
 		let str: String? = "str"
 		XCTAssertEqual(str.nilIfEmpty, str)
 	}
+
+	func test_nullIfNil() {
+		let nilStr: String? = nil
+		XCTAssertTrue(nilStr.nullIfNil is NSNull)
+
+		let emptyStr: String? = ""
+		XCTAssertTrue(emptyStr.nullIfNil is String)
+
+		let num: Int? = 123
+		XCTAssertTrue(num.nullIfNil is Int)
+	}
 }

@@ -32,3 +32,10 @@ extension Optional where Wrapped == String {
     return self
   }
 }
+
+extension Optional {
+	public var nullIfNil: Any {
+		guard let value = self else { return NSNull() }
+		return value
+	}
+}
