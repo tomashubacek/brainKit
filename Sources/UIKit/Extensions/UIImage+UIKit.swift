@@ -23,8 +23,8 @@ extension UIImage {
 		if (upscale == false) {
 			ratio = min(1, ratio)
 		}
-		let newWidth = ratio * originalWidth
-		let newHeight = ratio * originalHeight
+		let newWidth = round(ratio * originalWidth)
+		let newHeight = round(ratio * originalHeight)
 		let newSize = CGSize(width: newWidth, height: newHeight)
 
 		// render
