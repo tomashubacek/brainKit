@@ -74,4 +74,47 @@ final class DictionaryExtensionsTests: XCTestCase {
 		data.setValue(val: "a", forKeyPath: "1.2")
 		XCTAssertEqual(data, [1: [2: "a"]])
 	}
+
+	func test_Plist_Correct() {
+		let date = Date()
+		let input: [AnyHashable: Any] = [
+			"array1": [],
+			"array2": ["a", 1],
+			"dict1": [:],
+			"dict2": ["a": 1],
+			"dict3": ["x": 123],
+			"int": 123, "float": 1.33, "bool": true, "date": date
+		]
+		let expectation: [String: Any] = [
+			"array1": [],
+			"array2": ["a", 1],
+			"dict1": [:],
+			"dict2": ["a": 1],
+			"dict3": ["x": 123],
+			"int": 123, "float": 1.33, "bool": true, "date": date
+		]
+		let plist = input.plistCompatiblePart()
+		let pDict = NSDictionary(dictionary: plist)
+		let eDict = NSDictionary(dictionary: expectation)
+		XCTAssertEqual(pDict, eDict)
+	}
+
+	func test_Plist_Wrong() {
+		let input: [AnyHashable: Any] = [
+			"array": [NSNull()],
+			"dict1": ["a": 1, "index": IndexPath(row: 1, section: 1)],
+			"dict2": ["x": 123, "y": NSNull()],
+			"nil": NSNull(),
+			12: "aa"
+		]
+		let expectation: [String: Any] = [
+			"dict1": ["a": 1],
+			"dict2": ["x": 123],
+		]
+		let plist = input.plistCompatiblePart()
+		let pDict = NSDictionary(dictionary: plist)
+		let eDict = NSDictionary(dictionary: expectation)
+		XCTAssertEqual(pDict, eDict)
+	}
+
 }

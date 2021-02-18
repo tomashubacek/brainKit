@@ -59,4 +59,18 @@ extension Dictionary {
 		}
 		return value as? T
 	}
+
+	/// Returns dictionary without plist representable keys and values.
+	public func plistCompatiblePart() -> [String: Any] {
+		self.reduce(into: Dictionary<String, Any>()) { result, pair in
+			guard let key = pair.key as? String else { return }
+			if let dict = pair.value as? Self {
+				result[key] = dict.plistCompatiblePart()
+				return
+			}
+			let plist = try? PropertyListSerialization.data(fromPropertyList: pair.value, format: .xml, options: 0)
+			guard plist != nil else { return }
+			result[key] = pair.value
+		}
+	}
 }
