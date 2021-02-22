@@ -5,6 +5,7 @@ inhibit_all_warnings!
 
 def common_pods
 	pod 'SwiftyJSON', '~> 5.0'
+	pod 'SnapKit', '~> 5.0'
 end
 
 target 'BrainKit' do

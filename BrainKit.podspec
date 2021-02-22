@@ -37,6 +37,11 @@ Pod::Spec.new do |s|
     ss.dependency "SwiftyJSON", "~> 5"
   end
 
+  s.subspec "SnapKit" do |ss|
+    ss.source_files = "Sources/SnapKit/**/*.swift"
+    ss.dependency "SnapKit", "~> 5"
+  end
+
   s.subspec "UIKit" do |ss|
     ss.source_files = "Sources/UIKit/**/*.swift"
     ss.ios.frameworks = "UIKit"
