@@ -43,4 +43,12 @@ final class ArrayExtensionsTests: XCTestCase {
 		input.move(from: 0, to: 1)
 		XCTAssertEqual(input, [2, 1, 3])
 	}
+
+	func test_Chunked() {
+		let input = ["a", "b", "c"]
+		let output = input.chunked(into: 2)
+		XCTAssertEqual(output.count, 2)
+		XCTAssertEqual(output[0], ["a", "b"])
+		XCTAssertEqual(output[1], ["c"])
+	}
 }
