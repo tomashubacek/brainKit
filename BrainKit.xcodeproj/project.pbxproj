@@ -76,6 +76,7 @@
 		EEC01D7124DC4C5600318B46 /* UIScrollView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */; };
 		EEC8E7CF25E3B34B0021094C /* Constraint+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8E7CE25E3B34A0021094C /* Constraint+SnapKit.swift */; };
 		EED543AF2620664000CD807E /* UIViewController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED543AE2620664000CD807E /* UIViewController+UIKit.swift */; };
+		EED543B9262067FA00CD807E /* UINavigationBar+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED543B8262067FA00CD807E /* UINavigationBar+ext.swift */; };
 		EED785612489374E009960EE /* NSLocale+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED785602489374E009960EE /* NSLocale+UIKit.swift */; };
 		EEDEF33D250F9C0F00588359 /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEF33C250F9C0F00588359 /* PriceFormatter.swift */; };
 		EEE3CEDB248F8DD300983BE5 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */; };
@@ -169,6 +170,7 @@
 		EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+UIKit.swift"; sourceTree = "<group>"; };
 		EEC8E7CE25E3B34A0021094C /* Constraint+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraint+SnapKit.swift"; sourceTree = "<group>"; };
 		EED543AE2620664000CD807E /* UIViewController+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIKit.swift"; sourceTree = "<group>"; };
+		EED543B8262067FA00CD807E /* UINavigationBar+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+ext.swift"; sourceTree = "<group>"; };
 		EED785602489374E009960EE /* NSLocale+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocale+UIKit.swift"; sourceTree = "<group>"; };
 		EEDEF33C250F9C0F00588359 /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
 		EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 				EE3103D624771AF8007A817F /* UIAlertController+UIKit.swift */,
 				EE9F2122247FE765000C3120 /* UIWindow+UIKit.swift */,
 				EEC01D6C24DC4A4600318B46 /* UILabel+UIKit.swift */,
+				EED543B8262067FA00CD807E /* UINavigationBar+ext.swift */,
 				EED543AE2620664000CD807E /* UIViewController+UIKit.swift */,
 			);
 			path = Extensions;
@@ -682,6 +685,7 @@
 				EEC01D7124DC4C5600318B46 /* UIScrollView+UIKit.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EEC8E7CF25E3B34B0021094C /* Constraint+SnapKit.swift in Sources */,
+				EED543B9262067FA00CD807E /* UINavigationBar+ext.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */,
 				EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */,
 				EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */,
