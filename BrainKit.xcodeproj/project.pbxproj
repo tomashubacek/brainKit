@@ -32,6 +32,8 @@
 		EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */; };
 		EE35F9EC23F1B8D300F63697 /* UserDefaults+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9EB23F1B8D300F63697 /* UserDefaults+Foundation.swift */; };
 		EE35F9EE23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */; };
+		EE3949F9262EFA5D00248433 /* JSON+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3949F8262EFA5D00248433 /* JSON+SwiftyJSON.swift */; };
+		EE3949FD262EFB0C00248433 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3949FC262EFB0C00248433 /* JSONTests.swift */; };
 		EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */; };
 		EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */; };
 		EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */; };
@@ -126,6 +128,8 @@
 		EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionsTests.swift; sourceTree = "<group>"; };
 		EE35F9EB23F1B8D300F63697 /* UserDefaults+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Foundation.swift"; sourceTree = "<group>"; };
 		EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensionsTests.swift; sourceTree = "<group>"; };
+		EE3949F8262EFA5D00248433 /* JSON+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		EE3949FC262EFB0C00248433 /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 		EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
 		EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Foundation.swift"; sourceTree = "<group>"; };
@@ -271,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				EE0A95392456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift */,
+				EE3949F8262EFA5D00248433 /* JSON+SwiftyJSON.swift */,
 			);
 			path = SwiftyJSON;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */,
 				EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */,
 				EE9F21262481100D000C3120 /* OptionalExtensionsTests.swift */,
+				EE3949FC262EFB0C00248433 /* JSONTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -686,6 +692,7 @@
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EEC8E7CF25E3B34B0021094C /* Constraint+SnapKit.swift in Sources */,
 				EED543B9262067FA00CD807E /* UINavigationBar+ext.swift in Sources */,
+				EE3949F9262EFA5D00248433 /* JSON+SwiftyJSON.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */,
 				EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */,
 				EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */,
@@ -730,6 +737,7 @@
 				EE050DB9243F08DA00CB691D /* StoryboardInstantiable.swift in Sources */,
 				EE3103B5247531FE007A817F /* UIViewExtensionsTests.swift in Sources */,
 				EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */,
+				EE3949FD262EFB0C00248433 /* JSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
