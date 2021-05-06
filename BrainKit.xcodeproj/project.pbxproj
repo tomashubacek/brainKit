@@ -82,6 +82,7 @@
 		EED785612489374E009960EE /* NSLocale+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED785602489374E009960EE /* NSLocale+UIKit.swift */; };
 		EEDEF33D250F9C0F00588359 /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEF33C250F9C0F00588359 /* PriceFormatter.swift */; };
 		EEE3CEDB248F8DD300983BE5 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */; };
+		EEFA403726441EA2006F61FC /* UIApplication+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFA403626441EA2006F61FC /* UIApplication+UIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,7 @@
 		EED785602489374E009960EE /* NSLocale+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocale+UIKit.swift"; sourceTree = "<group>"; };
 		EEDEF33C250F9C0F00588359 /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
 		EEE3CEDA248F8DD300983BE5 /* PDFCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
+		EEFA403626441EA2006F61FC /* UIApplication+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+UIKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +388,7 @@
 				EE3103D624771AF8007A817F /* UIAlertController+UIKit.swift */,
 				EE9F2122247FE765000C3120 /* UIWindow+UIKit.swift */,
 				EEC01D6C24DC4A4600318B46 /* UILabel+UIKit.swift */,
+				EEFA403626441EA2006F61FC /* UIApplication+UIKit.swift */,
 				EED543B8262067FA00CD807E /* UINavigationBar+ext.swift */,
 				EED543AE2620664000CD807E /* UIViewController+UIKit.swift */,
 			);
@@ -696,6 +699,7 @@
 				EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */,
 				EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */,
 				EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */,
+				EEFA403726441EA2006F61FC /* UIApplication+UIKit.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+Foundation.swift in Sources */,
 				EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */,
 				EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */,
