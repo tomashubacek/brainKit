@@ -9,7 +9,7 @@
 import SwiftyJSON
 
 extension Bundle {
-	public  func loadJSONFromFile(_ name: String) -> JSON? {
+	public func loadJSONFromFile(_ name: String) -> JSON? {
 		guard let data = self.loadDataFromFile(name) else { return nil }
 		let json = JSON(data)
 		guard json != .null else { return nil }
