@@ -42,6 +42,7 @@
 		EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE663A6724BC3EDF00366C27 /* Functions.swift */; };
 		EE663A6A24BC3EEE00366C27 /* Bool+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE663A6924BC3EEE00366C27 /* Bool+Foundation.swift */; };
 		EE728F36265508C20072588F /* RunOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE728F35265508C20072588F /* RunOnce.swift */; };
+		EE728F3B265511B60072588F /* UITableViewController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE728F3A265511B60072588F /* UITableViewController+UIKit.swift */; };
 		EE8138E923FED60B005CE46D /* Collection+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138E823FED60B005CE46D /* Collection+Foundation.swift */; };
 		EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */; };
 		EE8138ED23FEDA8A005CE46D /* Bundle+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8138EC23FEDA8A005CE46D /* Bundle+Foundation.swift */; };
@@ -140,6 +141,7 @@
 		EE663A6724BC3EDF00366C27 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		EE663A6924BC3EEE00366C27 /* Bool+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Foundation.swift"; sourceTree = "<group>"; };
 		EE728F35265508C20072588F /* RunOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunOnce.swift; sourceTree = "<group>"; };
+		EE728F3A265511B60072588F /* UITableViewController+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+UIKit.swift"; sourceTree = "<group>"; };
 		EE8138E823FED60B005CE46D /* Collection+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Foundation.swift"; sourceTree = "<group>"; };
 		EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensionsTests.swift; sourceTree = "<group>"; };
 		EE8138EC23FEDA8A005CE46D /* Bundle+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Foundation.swift"; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 				EEFA403626441EA2006F61FC /* UIApplication+UIKit.swift */,
 				EED543B8262067FA00CD807E /* UINavigationBar+ext.swift */,
 				EED543AE2620664000CD807E /* UIViewController+UIKit.swift */,
+				EE728F3A265511B60072588F /* UITableViewController+UIKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -704,6 +707,7 @@
 				EEA016ED2461A8240053A9C2 /* DiskStorage.swift in Sources */,
 				EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */,
 				EEFA403726441EA2006F61FC /* UIApplication+UIKit.swift in Sources */,
+				EE728F3B265511B60072588F /* UITableViewController+UIKit.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+Foundation.swift in Sources */,
 				EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */,
 				EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */,
