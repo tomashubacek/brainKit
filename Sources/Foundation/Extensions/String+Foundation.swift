@@ -55,7 +55,7 @@ extension String {
 	}
 
 	public var isValidEmail: Bool {
-		let pattern = "\\A[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+\\z"
+		let pattern = "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$" // from https://stackoverflow.com/a/201336/1548913
 		let regex = try! NSRegularExpression(pattern: pattern, options: [])
 		let matches = regex.matches(in: self, options: [], range: NSRange(location: 0, length: self.count))
 		return matches.count == 1
