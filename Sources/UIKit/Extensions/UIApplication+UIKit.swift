@@ -15,4 +15,15 @@ extension UIApplication {
 		let frame = window?.windowScene?.statusBarManager?.statusBarFrame ?? .zero
 		return frame
 	}
+
+	public var topMostViewController: UIViewController? {
+		let keyWindow = self.windows.first { $0.isKeyWindow }
+		if var topController = keyWindow?.rootViewController {
+			while let presentedViewController = topController.presentedViewController {
+				topController = presentedViewController
+			}
+			return topController
+		}
+		return nil
+	}
 }
