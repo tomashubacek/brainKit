@@ -26,4 +26,9 @@ extension UIApplication {
 		}
 		return nil
 	}
+
+	public var topMostViewControllerBounds: CGRect {
+		guard let topMostViewController = self.topMostViewController else { return UIScreen.main.bounds }
+		return topMostViewController.view.bounds
+	}
 }

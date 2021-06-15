@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIScreen {
+	@available(*, deprecated, message: "Use UIApplication.shared.topMostViewControllerBounds instead.")
 	public static func correctBounds() -> CGRect {
 		if let topMostViewController = UIApplication.shared.topMostViewController {
 			return topMostViewController.view.bounds
