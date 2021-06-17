@@ -37,4 +37,33 @@ extension UIImage {
 		}
 		return newImage
 	}
+
+	public func squareCrop() -> UIImage {
+		let outEdge = min(self.size.width, self.size.height)
+		let dx = round((self.size.width - outEdge) / 2)
+		let dy = round((self.size.height - outEdge) / 2)
+		let squareSize = CGSize(width: outEdge, height: outEdge)
+		let renderFormat = UIGraphicsImageRendererFormat()
+		renderFormat.scale = 1
+		renderFormat.opaque = false
+		let renderer = UIGraphicsImageRenderer(size: squareSize, format: renderFormat)
+		let squareImage = renderer.image { [weak self] _ in
+			self?.draw(at: CGPoint(x: -dx, y: -dy))
+		}
+		return squareImage
+	}
+
+	public func squareCrop(edge: CGFloat, upscale: Bool) -> UIImage {
+		let smallerInputEdge = min(self.size.width, self.size.height)
+		var ratio = edge / smallerInputEdge
+		if (upscale == false) {
+			ratio = min(1, ratio)
+		}
+		let newWidth = round(self.size.width * ratio)
+		let newHeight = round(self.size.height * ratio)
+		let newSize = CGSize(width: newWidth, height: newHeight)
+		let resized = self.resized(toFit: newSize, upscale: upscale)
+		let square = resized.squareCrop()
+		return square
+	}
 }
