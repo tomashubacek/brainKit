@@ -8,6 +8,7 @@
 
 import CoreData
 import BrainKit
+import SwiftyJSON
 
 @objc(TestingEntity)
 class TestingEntity: NSManagedObject {
@@ -19,3 +20,8 @@ extension TestingEntity: OrderableManagedObject {}
 
 extension TestingEntity: IdentifiedManagedObject {}
 
+extension TestingEntity: JSONUpdatable {
+	func update(from json: JSON) {
+		self.id = json["id"].int64Value
+	}
+}

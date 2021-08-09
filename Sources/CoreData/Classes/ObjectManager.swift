@@ -45,6 +45,14 @@ open class ObjectManager<T> where T: NSManagedObject {
 	}
 }
 
+extension ObjectManager where T: JSONUpdatable {
+	public func insert(from json: JSON) -> T {
+		let object = self.insert()
+		object.update(from: json)
+		return object
+	}
+}
+
 extension ObjectManager where T: IdentifiedManagedObject {
 	public func find(withID id: Int64) -> T? {
 		let predicate = NSPredicate(format: "id == %d", id)
@@ -79,3 +87,6 @@ extension ObjectManager where T: IdentifiedManagedObject {
 		}
 	}
 }
+
+
+

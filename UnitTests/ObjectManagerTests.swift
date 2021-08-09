@@ -83,15 +83,13 @@ final class ObjectManagerTests: TestCoreDataTestCase {
 		XCTAssertNil(result)
 	}
 
-//	func test_InsertFromJSON() {
-//		let manager = ObjectManager<TestingEntity>(context: self.coreDataContainer.mainContext)
-//		_ = manager.insert(from: JSON(["id": 1]))
-//		_ = manager.insert(from: JSON(["id": 2]))
-//		let all = manager.fetch(predicate: NSPredicate(value: true))
-//		XCTAssertEqual(all.count, 2)
-//		XCTAssertNotNil(all.firstIndex { $0.id == 1 })
-//		XCTAssertNotNil(all.firstIndex { $0.id == 2 })
-//	}
-
-
+	func test_InsertFromJSON() {
+		let manager = ObjectManager<TestingEntity>(context: self.coreDataContainer.mainContext)
+		_ = manager.insert(from: JSON(["id": 1]))
+		_ = manager.insert(from: JSON(["id": 2]))
+		let all = manager.fetch(predicate: NSPredicate(value: true))
+		XCTAssertEqual(all.count, 2)
+		XCTAssertNotNil(all.firstIndex { $0.id == 1 })
+		XCTAssertNotNil(all.firstIndex { $0.id == 2 })
+	}
 }

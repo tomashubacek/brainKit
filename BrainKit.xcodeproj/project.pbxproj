@@ -47,6 +47,7 @@
 		EE39CEF326C122230018C39D /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEF226C122230018C39D /* ObjectManager.swift */; };
 		EE39CEF526C122830018C39D /* NSManagedObject+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEF426C122830018C39D /* NSManagedObject+CoreData.swift */; };
 		EE39CEF726C122F90018C39D /* ObjectManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */; };
+		EE39CEFF26C151EC0018C39D /* JSONUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEFD26C151430018C39D /* JSONUpdatable.swift */; };
 		EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */; };
 		EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */; };
 		EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */; };
@@ -160,6 +161,7 @@
 		EE39CEF226C122230018C39D /* ObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		EE39CEF426C122830018C39D /* NSManagedObject+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+CoreData.swift"; sourceTree = "<group>"; };
 		EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectManagerTests.swift; sourceTree = "<group>"; };
+		EE39CEFD26C151430018C39D /* JSONUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUpdatable.swift; sourceTree = "<group>"; };
 		EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
 		EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Foundation.swift"; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 		EE0A95382456D3A9008E3AD6 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
+				EE39CEFC26C151340018C39D /* Protocols */,
 				EE0A95392456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift */,
 				EE3949F8262EFA5D00248433 /* JSON+SwiftyJSON.swift */,
 			);
@@ -450,6 +453,14 @@
 			children = (
 				EE39CECF26C11B860018C39D /* OrderableManagedObject.swift */,
 				EE39CED326C11BC60018C39D /* IdentifiableManagedObject.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EE39CEFC26C151340018C39D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EE39CEFD26C151430018C39D /* JSONUpdatable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -741,6 +752,7 @@
 				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
 				EE39CEDF26C11D0F0018C39D /* CoreDataContainer.swift in Sources */,
 				EE39CED426C11BC60018C39D /* IdentifiableManagedObject.swift in Sources */,
+				EE39CEFF26C151EC0018C39D /* JSONUpdatable.swift in Sources */,
 				EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */,
 				EE81390024010BF2005CE46D /* UIColor+UIKit.swift in Sources */,
 				EEB7E76F2460867700C2E1F3 /* FileManager+Foundation.swift in Sources */,
