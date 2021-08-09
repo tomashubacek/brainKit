@@ -17,12 +17,10 @@
 		EE0A95372456C749008E3AD6 /* String+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A95362456C749008E3AD6 /* String+Foundation.swift */; };
 		EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A95392456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift */; };
 		EE0A953C2456DBC1008E3AD6 /* HelloWorld.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0A953B2456DBC1008E3AD6 /* HelloWorld.json */; };
-		EE0A953F2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A953E2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift */; };
 		EE24343224A49A4E008B061D /* FloatingPoint+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24343124A49A4E008B061D /* FloatingPoint+Foundation.swift */; };
 		EE24343424A49B23008B061D /* FloatingPointExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */; };
 		EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */; };
 		EE3103B5247531FE007A817F /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */; };
-		EE3103C6247673F1007A817F /* UIViewController+SafariServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103C5247673F1007A817F /* UIViewController+SafariServices.swift */; };
 		EE3103D724771AF8007A817F /* UIAlertController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103D624771AF8007A817F /* UIAlertController+UIKit.swift */; };
 		EE35F9D423F1985800F63697 /* BrainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35F9BB23F1978700F63697 /* BrainKit.framework */; };
 		EE35F9DC23F1993A00F63697 /* String+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9DB23F1993A00F63697 /* String+UIKit.swift */; };
@@ -34,6 +32,21 @@
 		EE35F9EE23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */; };
 		EE3949F9262EFA5D00248433 /* JSON+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3949F8262EFA5D00248433 /* JSON+SwiftyJSON.swift */; };
 		EE3949FD262EFB0C00248433 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3949FC262EFB0C00248433 /* JSONTests.swift */; };
+		EE39CED026C11B860018C39D /* OrderableManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CECF26C11B860018C39D /* OrderableManagedObject.swift */; };
+		EE39CED226C11B960018C39D /* NSManagedObjectContext+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A953E2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift */; };
+		EE39CED426C11BC60018C39D /* IdentifiableManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CED326C11BC60018C39D /* IdentifiableManagedObject.swift */; };
+		EE39CED826C11C420018C39D /* Set+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CED726C11C420018C39D /* Set+CoreData.swift */; };
+		EE39CEDB26C11C740018C39D /* OrderableSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEDA26C11C740018C39D /* OrderableSetTests.swift */; };
+		EE39CEDD26C11CB10018C39D /* TestCoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEDC26C11CB10018C39D /* TestCoreDataTestCase.swift */; };
+		EE39CEDF26C11D0F0018C39D /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEDE26C11D0F0018C39D /* CoreDataContainer.swift */; };
+		EE39CEE126C11D5F0018C39D /* TestingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEE026C11D5F0018C39D /* TestingEntity.swift */; };
+		EE39CEE226C11D9F0018C39D /* UIViewController+SafariServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3103C5247673F1007A817F /* UIViewController+SafariServices.swift */; };
+		EE39CEE426C11F020018C39D /* XCTestCase+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEE326C11F020018C39D /* XCTestCase+ext.swift */; };
+		EE39CEE726C11F4F0018C39D /* Testing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEE526C11F4E0018C39D /* Testing.xcdatamodeld */; };
+		EE39CEE926C11F870018C39D /* CoreDataContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEE826C11F870018C39D /* CoreDataContainerTests.swift */; };
+		EE39CEF326C122230018C39D /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEF226C122230018C39D /* ObjectManager.swift */; };
+		EE39CEF526C122830018C39D /* NSManagedObject+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEF426C122830018C39D /* NSManagedObject+CoreData.swift */; };
+		EE39CEF726C122F90018C39D /* ObjectManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */; };
 		EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */; };
 		EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */; };
 		EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */; };
@@ -134,6 +147,19 @@
 		EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensionsTests.swift; sourceTree = "<group>"; };
 		EE3949F8262EFA5D00248433 /* JSON+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		EE3949FC262EFB0C00248433 /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
+		EE39CECF26C11B860018C39D /* OrderableManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderableManagedObject.swift; sourceTree = "<group>"; };
+		EE39CED326C11BC60018C39D /* IdentifiableManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableManagedObject.swift; sourceTree = "<group>"; };
+		EE39CED726C11C420018C39D /* Set+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+CoreData.swift"; sourceTree = "<group>"; };
+		EE39CEDA26C11C740018C39D /* OrderableSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderableSetTests.swift; sourceTree = "<group>"; };
+		EE39CEDC26C11CB10018C39D /* TestCoreDataTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCoreDataTestCase.swift; sourceTree = "<group>"; };
+		EE39CEDE26C11D0F0018C39D /* CoreDataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
+		EE39CEE026C11D5F0018C39D /* TestingEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingEntity.swift; sourceTree = "<group>"; };
+		EE39CEE326C11F020018C39D /* XCTestCase+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+ext.swift"; sourceTree = "<group>"; };
+		EE39CEE626C11F4E0018C39D /* Testing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Testing.xcdatamodel; sourceTree = "<group>"; };
+		EE39CEE826C11F870018C39D /* CoreDataContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContainerTests.swift; sourceTree = "<group>"; };
+		EE39CEF226C122230018C39D /* ObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
+		EE39CEF426C122830018C39D /* NSManagedObject+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+CoreData.swift"; sourceTree = "<group>"; };
+		EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectManagerTests.swift; sourceTree = "<group>"; };
 		EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
 		EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Foundation.swift"; sourceTree = "<group>"; };
@@ -291,6 +317,8 @@
 		EE0A953D2456EF81008E3AD6 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				EE39CED626C11BE50018C39D /* Protocols */,
+				EE39CECD26C11ACC0018C39D /* Classes */,
 				EE0A95402456EFAF008E3AD6 /* Extensions */,
 			);
 			path = CoreData;
@@ -300,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				EE0A953E2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift */,
+				EE39CEF426C122830018C39D /* NSManagedObject+CoreData.swift */,
+				EE39CED726C11C420018C39D /* Set+CoreData.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -351,9 +381,12 @@
 		EE35F9D023F1985800F63697 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				EE8138F824003B6F005CE46D /* Extensions */,
+				EE8138F824003B6F005CE46D /* Support */,
 				EE8138F023FEE3FC005CE46D /* Resources */,
 				EE35F9D323F1985800F63697 /* Info.plist */,
+				EE39CEDA26C11C740018C39D /* OrderableSetTests.swift */,
+				EE39CEE826C11F870018C39D /* CoreDataContainerTests.swift */,
+				EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */,
 				EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */,
 				EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */,
 				EE35F9DF23F19E0200F63697 /* StringExtensionsTests.swift */,
@@ -403,9 +436,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		EE39CECD26C11ACC0018C39D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE39CEDE26C11D0F0018C39D /* CoreDataContainer.swift */,
+				EE39CEF226C122230018C39D /* ObjectManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EE39CED626C11BE50018C39D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EE39CECF26C11B860018C39D /* OrderableManagedObject.swift */,
+				EE39CED326C11BC60018C39D /* IdentifiableManagedObject.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EE8138F023FEE3FC005CE46D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EE39CEE526C11F4E0018C39D /* Testing.xcdatamodeld */,
 				EE0A953B2456DBC1008E3AD6 /* HelloWorld.json */,
 				EE8138F323FFDEE6005CE46D /* File.bin */,
 				EE050DC2243F1F6100CB691D /* HelloWorld.plist */,
@@ -426,12 +478,15 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		EE8138F824003B6F005CE46D /* Extensions */ = {
+		EE8138F824003B6F005CE46D /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				EE39CEE026C11D5F0018C39D /* TestingEntity.swift */,
+				EE39CEDC26C11CB10018C39D /* TestCoreDataTestCase.swift */,
+				EE39CEE326C11F020018C39D /* XCTestCase+ext.swift */,
 				EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */,
 			);
-			path = Extensions;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		EEAEAF8324596A41009FC6E7 /* Classes */ = {
@@ -684,6 +739,8 @@
 				EE9F211F247FE309000C3120 /* NSOrderedSet+Foundation.swift in Sources */,
 				EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */,
 				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
+				EE39CEDF26C11D0F0018C39D /* CoreDataContainer.swift in Sources */,
+				EE39CED426C11BC60018C39D /* IdentifiableManagedObject.swift in Sources */,
 				EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */,
 				EE81390024010BF2005CE46D /* UIColor+UIKit.swift in Sources */,
 				EEB7E76F2460867700C2E1F3 /* FileManager+Foundation.swift in Sources */,
@@ -702,8 +759,10 @@
 				EEE3CEDB248F8DD300983BE5 /* PDFCreator.swift in Sources */,
 				EE8138ED23FEDA8A005CE46D /* Bundle+Foundation.swift in Sources */,
 				EEC01D7124DC4C5600318B46 /* UIScrollView+UIKit.swift in Sources */,
+				EE39CED826C11C420018C39D /* Set+CoreData.swift in Sources */,
 				EE8138F724003AB8005CE46D /* TestableFatals.swift in Sources */,
 				EEC8E7CF25E3B34B0021094C /* Constraint+SnapKit.swift in Sources */,
+				EE39CEF526C122830018C39D /* NSManagedObject+CoreData.swift in Sources */,
 				EED543B9262067FA00CD807E /* UINavigationBar+ext.swift in Sources */,
 				EE3949F9262EFA5D00248433 /* JSON+SwiftyJSON.swift in Sources */,
 				EE35F9DE23F1999000F63697 /* Data+Foundation.swift in Sources */,
@@ -711,14 +770,18 @@
 				EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */,
 				EEFA403726441EA2006F61FC /* UIApplication+UIKit.swift in Sources */,
 				EE728F3B265511B60072588F /* UITableViewController+UIKit.swift in Sources */,
+				EE39CED026C11B860018C39D /* OrderableManagedObject.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+Foundation.swift in Sources */,
 				EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */,
 				EEB5CBA82678879600473A3B /* UIScreen+UIKit.swift in Sources */,
+				EE39CEF326C122230018C39D /* ObjectManager.swift in Sources */,
 				EEAEAF82245969FB009FC6E7 /* APIDateFormatter.swift in Sources */,
 				EEB7E76D2460833F00C2E1F3 /* UIImage+UIKit.swift in Sources */,
 				EEC01D6D24DC4A4600318B46 /* UILabel+UIKit.swift in Sources */,
 				EE81390424013B50005CE46D /* Dictionary+Foundation.swift in Sources */,
+				EE39CED226C11B960018C39D /* NSManagedObjectContext+CoreData.swift in Sources */,
 				EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */,
+				EE39CEE226C11D9F0018C39D /* UIViewController+SafariServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,20 +794,24 @@
 				EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */,
 				EEA016F32462B2880053A9C2 /* MemCacheTests.swift in Sources */,
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
+				EE39CEF726C122F90018C39D /* ObjectManagerTests.swift in Sources */,
 				EE3103D724771AF8007A817F /* UIAlertController+UIKit.swift in Sources */,
 				EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */,
 				EE9F21272481100D000C3120 /* OptionalExtensionsTests.swift in Sources */,
 				EEAEAF90245AA604009FC6E7 /* DateTests.swift in Sources */,
+				EE39CEDD26C11CB10018C39D /* TestCoreDataTestCase.swift in Sources */,
 				EEAEAF92245AA6A6009FC6E7 /* APIDateFormatterTests.swift in Sources */,
+				EE39CEDB26C11C740018C39D /* OrderableSetTests.swift in Sources */,
 				EE8138FE240054BE005CE46D /* DoubleExtensionsTests.swift in Sources */,
 				EE5CD96F24112BC4002C53E9 /* DictionaryExtensionsTests.swift in Sources */,
+				EE39CEE126C11D5F0018C39D /* TestingEntity.swift in Sources */,
 				EE5CD951240FF522002C53E9 /* SequenceExtensionsTests.swift in Sources */,
+				EE39CEE926C11F870018C39D /* CoreDataContainerTests.swift in Sources */,
 				EE8138EF23FEE3E0005CE46D /* BundleExtensionsTests.swift in Sources */,
 				EE24343424A49B23008B061D /* FloatingPointExtensionsTests.swift in Sources */,
-				EE0A953F2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift in Sources */,
 				EE9F2123247FE765000C3120 /* UIWindow+UIKit.swift in Sources */,
+				EE39CEE726C11F4F0018C39D /* Testing.xcdatamodeld in Sources */,
 				EE9F212524810FB3000C3120 /* Optional+Foundation.swift in Sources */,
-				EE3103C6247673F1007A817F /* UIViewController+SafariServices.swift in Sources */,
 				EEA016F12462B1120053A9C2 /* MemCache.swift in Sources */,
 				EE35F9E023F19E0200F63697 /* StringExtensionsTests.swift in Sources */,
 				EE35F9E423F1A04D00F63697 /* URLExtensionsTests.swift in Sources */,
@@ -753,6 +820,7 @@
 				EE050DB9243F08DA00CB691D /* StoryboardInstantiable.swift in Sources */,
 				EE3103B5247531FE007A817F /* UIViewExtensionsTests.swift in Sources */,
 				EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */,
+				EE39CEE426C11F020018C39D /* XCTestCase+ext.swift in Sources */,
 				EE3949FD262EFB0C00248433 /* JSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1013,6 +1081,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE39CEE526C11F4E0018C39D /* Testing.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE39CEE626C11F4E0018C39D /* Testing.xcdatamodel */,
+			);
+			currentVersion = EE39CEE626C11F4E0018C39D /* Testing.xcdatamodel */;
+			path = Testing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EE35F9B223F1978700F63697 /* Project object */;
 }
