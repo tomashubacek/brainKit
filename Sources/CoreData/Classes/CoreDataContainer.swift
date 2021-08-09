@@ -15,8 +15,8 @@ public final class CoreDataContainer {
 		case inMemory
 	}
 
-	public static var sharedContainerName = "Default"
-	public static let shared = CoreDataContainer(modelName: CoreDataContainer.sharedContainerName)
+	public static var sharedModelName = "Default"
+	public static let shared = CoreDataContainer(modelName: CoreDataContainer.sharedModelName)
 	public let persistenceContainer: NSPersistentContainer
 	public var mainContext: NSManagedObjectContext {
 		self.persistenceContainer.viewContext
