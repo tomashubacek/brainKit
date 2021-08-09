@@ -58,7 +58,12 @@ extension ObjectManager where T: IdentifiedManagedObject {
 	}
 
 	public func findOrInsert(withID id: Int64) -> T {
-		self.find(withID: id) ?? self.insert()
+		if let existing = self.find(withID: id) {
+			return existing
+		}
+		let new = self.insert()
+		new.id = id
+		return new
 	}
 
 	public func findInOrder(withIDs ids: [Int64]) -> [T] {

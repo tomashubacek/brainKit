@@ -62,6 +62,15 @@ final class ObjectManagerTests: TestCoreDataTestCase {
 		XCTAssertEqual(all.count, 2)
 	}
 
+	func test_FindOrInsert() {
+		let manager = ObjectManager<TestingEntity>(context: self.coreDataContainer.mainContext)
+		let e1 = manager.findOrInsert(withID: 1)
+		let e2 = manager.findOrInsert(withID: 1)
+		let entities = manager.fetch(predicate: NSPredicate(value: true), sortDescriptors: nil, limit: nil)
+		XCTAssertEqual(entities.count, 1)
+		XCTAssertEqual(e1.objectID, e2.objectID)
+	}
+
 	func test_Delete() {
 		let id = Int64(10)
 		let e = TestingEntity(context: self.coreDataContainer.mainContext)

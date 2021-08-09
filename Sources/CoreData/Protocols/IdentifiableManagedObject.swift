@@ -9,5 +9,5 @@
 import CoreData
 
 public protocol IdentifiedManagedObject: NSManagedObject {
-	var id: Int64 { get }
+	var id: Int64 { get set }
 }
