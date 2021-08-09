@@ -14,6 +14,7 @@ import SwiftyJSON
 class TestingEntity: NSManagedObject {
 	@NSManaged var id: Int64
 	@NSManaged var ord: Int32
+	@NSManaged var related: Set<RelatedEntity>
 }
 
 extension TestingEntity: OrderableManagedObject {}

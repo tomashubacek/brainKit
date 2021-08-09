@@ -48,6 +48,8 @@
 		EE39CEF526C122830018C39D /* NSManagedObject+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEF426C122830018C39D /* NSManagedObject+CoreData.swift */; };
 		EE39CEF726C122F90018C39D /* ObjectManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */; };
 		EE39CEFF26C151EC0018C39D /* JSONUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CEFD26C151430018C39D /* JSONUpdatable.swift */; };
+		EE39CF0326C162420018C39D /* ManagedObjectSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF0226C162410018C39D /* ManagedObjectSetTests.swift */; };
+		EE39CF0526C162B70018C39D /* RelatedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF0426C162B70018C39D /* RelatedEntity.swift */; };
 		EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */; };
 		EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */; };
 		EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */; };
@@ -162,6 +164,8 @@
 		EE39CEF426C122830018C39D /* NSManagedObject+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+CoreData.swift"; sourceTree = "<group>"; };
 		EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectManagerTests.swift; sourceTree = "<group>"; };
 		EE39CEFD26C151430018C39D /* JSONUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUpdatable.swift; sourceTree = "<group>"; };
+		EE39CF0226C162410018C39D /* ManagedObjectSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectSetTests.swift; sourceTree = "<group>"; };
+		EE39CF0426C162B70018C39D /* RelatedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedEntity.swift; sourceTree = "<group>"; };
 		EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
 		EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Foundation.swift"; sourceTree = "<group>"; };
@@ -388,6 +392,7 @@
 				EE8138F023FEE3FC005CE46D /* Resources */,
 				EE35F9D323F1985800F63697 /* Info.plist */,
 				EE39CEDA26C11C740018C39D /* OrderableSetTests.swift */,
+				EE39CF0226C162410018C39D /* ManagedObjectSetTests.swift */,
 				EE39CEE826C11F870018C39D /* CoreDataContainerTests.swift */,
 				EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */,
 				EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */,
@@ -493,6 +498,7 @@
 			isa = PBXGroup;
 			children = (
 				EE39CEE026C11D5F0018C39D /* TestingEntity.swift */,
+				EE39CF0426C162B70018C39D /* RelatedEntity.swift */,
 				EE39CEDC26C11CB10018C39D /* TestCoreDataTestCase.swift */,
 				EE39CEE326C11F020018C39D /* XCTestCase+ext.swift */,
 				EE8138F924003B89005CE46D /* XCTestCase+Fatals.swift */,
@@ -804,6 +810,7 @@
 				EE35F9EE23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift in Sources */,
 				EE050DBB243F091500CB691D /* StoryboardViewController.swift in Sources */,
 				EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */,
+				EE39CF0526C162B70018C39D /* RelatedEntity.swift in Sources */,
 				EEA016F32462B2880053A9C2 /* MemCacheTests.swift in Sources */,
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
 				EE39CEF726C122F90018C39D /* ObjectManagerTests.swift in Sources */,
@@ -822,6 +829,7 @@
 				EE8138EF23FEE3E0005CE46D /* BundleExtensionsTests.swift in Sources */,
 				EE24343424A49B23008B061D /* FloatingPointExtensionsTests.swift in Sources */,
 				EE9F2123247FE765000C3120 /* UIWindow+UIKit.swift in Sources */,
+				EE39CF0326C162420018C39D /* ManagedObjectSetTests.swift in Sources */,
 				EE39CEE726C11F4F0018C39D /* Testing.xcdatamodeld in Sources */,
 				EE9F212524810FB3000C3120 /* Optional+Foundation.swift in Sources */,
 				EEA016F12462B1120053A9C2 /* MemCache.swift in Sources */,

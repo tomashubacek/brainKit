@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RelatedEntity" representedClassName=".RelatedEntity" syncable="YES">
+        <relationship name="testing" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestingEntity" inverseName="related" inverseEntity="TestingEntity"/>
+    </entity>
     <entity name="TestingEntity" representedClassName="TestingEntity" syncable="YES">
         <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="ord" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="related" toMany="YES" deletionRule="Nullify" destinationEntity="RelatedEntity" inverseName="testing" inverseEntity="RelatedEntity"/>
     </entity>
     <elements>
-        <element name="TestingEntity" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="TestingEntity" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="RelatedEntity" positionX="-63" positionY="0" width="128" height="44"/>
     </elements>
 </model>
