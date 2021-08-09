@@ -14,8 +14,8 @@ import SwiftyJSON
 open class ObjectManager<T> where T: NSManagedObject {
 	public var context: NSManagedObjectContext
 
-	public var entityName: String {
-		T.entity().name!
+	private var entityName: String {
+		T.entity().name ?? String(describing: T.self)
 	}
 
 	public init(context: NSManagedObjectContext) {
