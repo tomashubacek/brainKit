@@ -54,6 +54,26 @@ final class ObjectManagerTests: TestCoreDataTestCase {
 		XCTAssertEqual(result?.id, id)
 	}
 
+	func test_Insert() {
+		let manager = ObjectManager<TestingEntity>(context: self.coreDataContainer.mainContext)
+		_ = manager.insert()
+		_ = manager.insert()
+		let all = manager.fetch(predicate: NSPredicate(value: true))
+		XCTAssertEqual(all.count, 2)
+	}
+
+	func test_Delete() {
+		let id = Int64(10)
+		let e = TestingEntity(context: self.coreDataContainer.mainContext)
+		e.id = id
+		let manager = ObjectManager<TestingEntity>(context: self.coreDataContainer.mainContext)
+		var result = manager.find(withID: id)
+		XCTAssertNotNil(result)
+		manager.delete(withID: id)
+		result = manager.find(withID: id)
+		XCTAssertNil(result)
+	}
+
 //	func test_InsertFromJSON() {
 //		let manager = ObjectManager<TestingEntity>(context: self.coreDataContainer.mainContext)
 //		_ = manager.insert(from: JSON(["id": 1]))
@@ -64,11 +84,5 @@ final class ObjectManagerTests: TestCoreDataTestCase {
 //		XCTAssertNotNil(all.firstIndex { $0.id == 2 })
 //	}
 
-	func test_Insert() {
-		let manager = ObjectManager<TestingEntity>(context: self.coreDataContainer.mainContext)
-		_ = manager.insert()
-		_ = manager.insert()
-		let all = manager.fetch(predicate: NSPredicate(value: true))
-		XCTAssertEqual(all.count, 2)
-	}
+
 }
