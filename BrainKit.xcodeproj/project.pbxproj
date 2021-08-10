@@ -52,6 +52,10 @@
 		EE39CF0526C162B70018C39D /* RelatedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF0426C162B70018C39D /* RelatedEntity.swift */; };
 		EE39CF0826C2CBC70018C39D /* PersistentCodableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF0726C2CBC70018C39D /* PersistentCodableList.swift */; };
 		EE39CF0A26C2CBE40018C39D /* PersistentCodableListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF0926C2CBE40018C39D /* PersistentCodableListTests.swift */; };
+		EE39CF0E26C2D0460018C39D /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF0D26C2D0460018C39D /* BoolTests.swift */; };
+		EE39CF1026C2D2440018C39D /* UIStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF0F26C2D2440018C39D /* UIStackViewTests.swift */; };
+		EE39CF1226C2D4880018C39D /* RunOnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF1126C2D4880018C39D /* RunOnceTests.swift */; };
+		EE39CF1426C2D55A0018C39D /* FunctionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE39CF1326C2D55A0018C39D /* FunctionsTest.swift */; };
 		EE5CD94B2405561E002C53E9 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */; };
 		EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */; };
 		EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */; };
@@ -170,6 +174,10 @@
 		EE39CF0426C162B70018C39D /* RelatedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedEntity.swift; sourceTree = "<group>"; };
 		EE39CF0726C2CBC70018C39D /* PersistentCodableList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentCodableList.swift; sourceTree = "<group>"; };
 		EE39CF0926C2CBE40018C39D /* PersistentCodableListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentCodableListTests.swift; sourceTree = "<group>"; };
+		EE39CF0D26C2D0460018C39D /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
+		EE39CF0F26C2D2440018C39D /* UIStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewTests.swift; sourceTree = "<group>"; };
+		EE39CF1126C2D4880018C39D /* RunOnceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunOnceTests.swift; sourceTree = "<group>"; };
+		EE39CF1326C2D55A0018C39D /* FunctionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsTest.swift; sourceTree = "<group>"; };
 		EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		EE5CD94C24067E6B002C53E9 /* Array+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
 		EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Foundation.swift"; sourceTree = "<group>"; };
@@ -396,6 +404,10 @@
 				EE8138F023FEE3FC005CE46D /* Resources */,
 				EE35F9D323F1985800F63697 /* Info.plist */,
 				EE39CF0926C2CBE40018C39D /* PersistentCodableListTests.swift */,
+				EE39CF1126C2D4880018C39D /* RunOnceTests.swift */,
+				EE39CF0F26C2D2440018C39D /* UIStackViewTests.swift */,
+				EE39CF0D26C2D0460018C39D /* BoolTests.swift */,
+				EE39CF1326C2D55A0018C39D /* FunctionsTest.swift */,
 				EE39CEDA26C11C740018C39D /* OrderableSetTests.swift */,
 				EE39CF0226C162410018C39D /* ManagedObjectSetTests.swift */,
 				EE39CEE826C11F870018C39D /* CoreDataContainerTests.swift */,
@@ -821,6 +833,7 @@
 				EEA016F32462B2880053A9C2 /* MemCacheTests.swift in Sources */,
 				EE8138EB23FED667005CE46D /* CollectionExtensionsTests.swift in Sources */,
 				EE39CF0A26C2CBE40018C39D /* PersistentCodableListTests.swift in Sources */,
+				EE39CF1426C2D55A0018C39D /* FunctionsTest.swift in Sources */,
 				EE39CEF726C122F90018C39D /* ObjectManagerTests.swift in Sources */,
 				EE3103D724771AF8007A817F /* UIAlertController+UIKit.swift in Sources */,
 				EEA016EF2461A8A90053A9C2 /* DiskStorageTests.swift in Sources */,
@@ -831,6 +844,7 @@
 				EE39CEDB26C11C740018C39D /* OrderableSetTests.swift in Sources */,
 				EE8138FE240054BE005CE46D /* DoubleExtensionsTests.swift in Sources */,
 				EE5CD96F24112BC4002C53E9 /* DictionaryExtensionsTests.swift in Sources */,
+				EE39CF1026C2D2440018C39D /* UIStackViewTests.swift in Sources */,
 				EE39CEE126C11D5F0018C39D /* TestingEntity.swift in Sources */,
 				EE5CD951240FF522002C53E9 /* SequenceExtensionsTests.swift in Sources */,
 				EE39CEE926C11F870018C39D /* CoreDataContainerTests.swift in Sources */,
@@ -838,6 +852,7 @@
 				EE24343424A49B23008B061D /* FloatingPointExtensionsTests.swift in Sources */,
 				EE9F2123247FE765000C3120 /* UIWindow+UIKit.swift in Sources */,
 				EE39CF0326C162420018C39D /* ManagedObjectSetTests.swift in Sources */,
+				EE39CF0E26C2D0460018C39D /* BoolTests.swift in Sources */,
 				EE39CEE726C11F4F0018C39D /* Testing.xcdatamodeld in Sources */,
 				EE9F212524810FB3000C3120 /* Optional+Foundation.swift in Sources */,
 				EEA016F12462B1120053A9C2 /* MemCache.swift in Sources */,
@@ -850,6 +865,7 @@
 				EE81390224010D03005CE46D /* UIColorExtensionsTests.swift in Sources */,
 				EE39CEE426C11F020018C39D /* XCTestCase+ext.swift in Sources */,
 				EE3949FD262EFB0C00248433 /* JSONTests.swift in Sources */,
+				EE39CF1226C2D4880018C39D /* RunOnceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
