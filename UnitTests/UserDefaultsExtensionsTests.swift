@@ -16,7 +16,6 @@ struct Item: Codable, Equatable {
 }
 
 final class UserDefaultsExtensionsTests: XCTestCase {
-
 	func test_SetAndGetObject() {
 		let input = [Item(value: "a"), Item(value: "b")]
 		let userDefaults = UserDefaults.standard

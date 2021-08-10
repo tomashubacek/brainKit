@@ -26,8 +26,4 @@ final class CoreDataContainerTests: TestCoreDataTestCase {
 		let context2 = self.coreDataContainer.newBackgroundContext()
 		XCTAssertNotEqual(context1, context2)
 	}
-
-	func test_ExplicitName() {
-		XCTAssertEqual(self.coreDataContainer.persistenceContainer.name, "Testing")
-	}
 }

@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 
 final class NSOrderedSetTestsTests: XCTestCase {
-	func test_isEmpty() {
+	func test_IsEmpty() {
 		let empty = NSOrderedSet()
 		XCTAssertTrue(empty.isEmpty)
 

@@ -10,7 +10,6 @@ import XCTest
 import BrainKit
 
 final class UIViewExtensionsTests: XCTestCase {
-
 	func test_ForAutolayout() {
 		let auto = UIImageView().forAutolayout()
 		XCTAssertFalse(auto.translatesAutoresizingMaskIntoConstraints)

@@ -52,7 +52,7 @@ final class DiskStorageTests: XCTestCase {
 	func test_Load_Existing() {
 		try? self.storage.saveData(self.dataContent, toFileNamed: self.fileName1)
 		let data = self.storage.dataFromFile(named: self.fileName1)
-		XCTAssertEqual(self.dataContent, data)
+		XCTAssertEqual(data, self.dataContent)
 	}
 
 	func test_Load_Nonexisting() {
@@ -80,7 +80,7 @@ final class DiskStorageTests: XCTestCase {
 		let url = storage.urlOfFile(named: self.fileName1)!
 		try? self.storage.saveFile(from: url, toFileNamed: self.fileName2)
 		let data = self.storage.dataFromFile(named: self.fileName2)
-		XCTAssertEqual(self.dataContent, data)
+		XCTAssertEqual(data, self.dataContent)
 	}
 
 	func test_SavingFile_Nonexisting() {

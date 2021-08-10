@@ -12,7 +12,6 @@ import XCTest
 import BrainKit
 
 final class MemCacheTests: XCTestCase {
-
 	var cache: MemCache<Int, IndexPath>!
 
 	override func setUp() {

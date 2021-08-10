@@ -10,7 +10,6 @@ import BrainKit
 import XCTest
 
 final class URLExtensionsTests: XCTestCase {
-
 	func test_StaticInit_Success() {
 		let url = URL(staticString: "https://exmaple.org")
 		XCTAssertEqual(url.absoluteString, "https://exmaple.org")
@@ -30,5 +29,4 @@ final class URLExtensionsTests: XCTestCase {
 		output = output.appendingParam(name: "x", value: nil)
 		XCTAssertEqual(output.absoluteString, "https://example.org?foo=bar&x")
 	}
-
 }

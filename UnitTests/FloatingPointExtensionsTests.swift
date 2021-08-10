@@ -10,7 +10,6 @@ import BrainKit
 import XCTest
 
 final class FloatingPointExtensionsTests: XCTestCase {
-
 	func test_StartRange() {
 		let num = 0.0
 		let x = num.map(from: (0,5), to: (1,10))

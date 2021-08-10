@@ -11,10 +11,9 @@ import BrainKit
 import XCTest
 
 final class SequenceExtensionsTests: XCTestCase {
-
 	func test_Unique() {
 		let input = [1,2,3,3,2,1,4]
 		let output = input.unique()
-		XCTAssertEqual([1,2,3,4], output)
+		XCTAssertEqual(output, [1,2,3,4])
 	}
 }

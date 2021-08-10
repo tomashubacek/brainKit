@@ -20,7 +20,7 @@ final class OptionalExtensionsTests: XCTestCase {
 		XCTAssertEqual(b, "initial value")
 	}
 
-	func test_isNilOrEmpty() {
+	func test_IsNilOrEmpty() {
 		let nilStr: String? = nil
 		XCTAssertTrue(nilStr.isNilOrEmpty)
 
@@ -31,7 +31,7 @@ final class OptionalExtensionsTests: XCTestCase {
 		XCTAssertFalse(str.isNilOrEmpty)
 	}
 
-	func test_nilIfEmpty() {
+	func test_NilIfEmpty() {
 		let nilStr: String? = nil
 		XCTAssertNil(nilStr.nilIfEmpty)
 
@@ -42,7 +42,7 @@ final class OptionalExtensionsTests: XCTestCase {
 		XCTAssertEqual(str.nilIfEmpty, str)
 	}
 
-	func test_nullIfNil() {
+	func test_NullIfNil() {
 		let nilStr: String? = nil
 		XCTAssertTrue(nilStr.nullIfNil is NSNull)
 

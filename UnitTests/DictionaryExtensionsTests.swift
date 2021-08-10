@@ -94,9 +94,9 @@ final class DictionaryExtensionsTests: XCTestCase {
 			"int": 123, "float": 1.33, "bool": true, "date": date
 		]
 		let plist = input.plistCompatiblePart()
-		let pDict = NSDictionary(dictionary: plist)
-		let eDict = NSDictionary(dictionary: expectation)
-		XCTAssertEqual(pDict, eDict)
+		let plistDict = NSDictionary(dictionary: plist)
+		let expectedDict = NSDictionary(dictionary: expectation)
+		XCTAssertEqual(plistDict, expectedDict)
 	}
 
 	func test_Plist_Wrong() {
@@ -112,9 +112,8 @@ final class DictionaryExtensionsTests: XCTestCase {
 			"dict2": ["x": 123],
 		]
 		let plist = input.plistCompatiblePart()
-		let pDict = NSDictionary(dictionary: plist)
-		let eDict = NSDictionary(dictionary: expectation)
-		XCTAssertEqual(pDict, eDict)
+		let plistDict = NSDictionary(dictionary: plist)
+		let expectedDict = NSDictionary(dictionary: expectation)
+		XCTAssertEqual(plistDict, expectedDict)
 	}
-
 }

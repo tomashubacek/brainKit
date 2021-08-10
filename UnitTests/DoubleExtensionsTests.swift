@@ -11,7 +11,7 @@ import XCTest
 import BrainKit
 
 final class DoubleExtensionsTests: XCTestCase {
-	func test_Rationals_DefaulPrecision() {
+	func test_Rationals_DefaultPrecision() {
 		// given
 		let data: [Double: Rational] = [
 			0.333333: (1, 3),

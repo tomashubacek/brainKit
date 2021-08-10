@@ -10,7 +10,6 @@ import BrainKit
 import XCTest
 
 final class UIColorExtensionsTests: XCTestCase {
-
 	func test_ImageFromColor() {
 		// given
 		let r = 50.0

@@ -9,11 +9,9 @@
 import XCTest
 
 final class CollectionExtensionsTests: XCTestCase {
-
 	func test_SafeSubscript() {
 		let data = [0, 1, 2]
 		XCTAssertNotNil(data[safe: 1])
 		XCTAssertNil(data[safe: 10])
 	}
-
 }

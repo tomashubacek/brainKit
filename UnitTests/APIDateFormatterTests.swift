@@ -10,7 +10,6 @@ import XCTest
 import BrainKit
 
 final class APIDateFormatterTests: XCTestCase {
-
 	func test_APIDateFormatter_CorrectInput() {
 		let input = "2020-04-30T10:20:30.456Z"
 		let formatter = APIDateFormatter()

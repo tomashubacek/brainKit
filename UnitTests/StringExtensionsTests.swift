@@ -10,7 +10,6 @@ import BrainKit
 import XCTest
 
 final class StringExtensionsTests: XCTestCase {
-
 	func test_Normalized() {
 		XCTAssertEqual("abc".normalized(), "abc")
 		XCTAssertEqual("Abc".normalized(), "abc")

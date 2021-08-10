@@ -12,7 +12,6 @@ import BrainKit
 import XCTest
 
 final class ArrayExtensionsTests: XCTestCase {
-
 	func test_Move_WrongParams() {
 		var input = [1, 2, 3]
 

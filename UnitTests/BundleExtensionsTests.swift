@@ -23,7 +23,6 @@ final class BundleMock: Bundle {
 }
 
 final class BundleExtensionsTests: XCTestCase {
-
 	func test_StringLoad_ExistingTextFile() {
 		let bundle = Bundle(for: type(of: self))
 		let content = bundle.loadStringFromFile("HelloWorld.txt")
