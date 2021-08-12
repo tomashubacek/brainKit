@@ -15,7 +15,13 @@ final class MemCacheTests: XCTestCase {
 	var cache: MemCache<Int, IndexPath>!
 
 	override func setUp() {
+		super.setUp()
 		self.cache = MemCache()
+	}
+
+	override func tearDown() {
+		self.cache = nil
+		super.tearDown()
 	}
 
 	func test_InsertAndRemove() {

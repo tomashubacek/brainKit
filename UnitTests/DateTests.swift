@@ -16,6 +16,11 @@ final class DateTests: XCTestCase {
 		self.calendar = Calendar.current
 	}
 
+	override func tearDown() {
+		self.calendar = nil
+		super.tearDown()
+	}
+
 	func test_DateString_CorrectInput() {
 		let date = Date.from(dateString: "2019-02-03")!
 		let components = self.calendar.dateComponents([.year, .month, .day], from: date)

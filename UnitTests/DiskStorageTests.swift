@@ -35,7 +35,7 @@ final class DiskStorageTests: XCTestCase {
 		super.tearDown()
 		try? self.storage.removeFile(named: self.fileName1)
 		try? self.storage.removeFile(named: self.fileName2)
-		print("TEAR")
+		self.storage = nil
 	}
 
 	func test_Existence_Existing() {
