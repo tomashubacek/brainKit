@@ -26,4 +26,13 @@ extension UIFont {
 		}
 		return font
 	}
+
+	@available(iOS 13.0, *)
+	public static func systemFont(ofSize size: CGFloat, weight: Weight, design: UIFontDescriptor.SystemDesign = .default) -> UIFont {
+		var font = UIFont.systemFont(ofSize: size, weight: weight)
+		if let desc = font.fontDescriptor.withDesign(design) {
+			font = UIFont(descriptor: desc, size: size)
+		}
+		return font
+	}
 }
