@@ -9,17 +9,17 @@
 import UIKit
 
 extension UIFont {
-	public static func preferredFont(forTextStyle style: TextStyle, weight: Weight) -> UIFont {
+	public static func preferredFont(forTextStyle style: TextStyle, weight: Weight, maxSize: CGFloat = CGFloat.greatestFiniteMagnitude) -> UIFont {
 		let preferred = UIFontDescriptor.preferredFontDescriptor(withTextStyle: style)
-		let size = preferred.pointSize
+		let size = min(preferred.pointSize, maxSize)
 		let font = UIFont.systemFont(ofSize: size, weight: weight)
 		return font
 	}
 
 	@available(iOS 13.0, *)
-	public static func preferredFont(forTextStyle style: TextStyle, weight: Weight, design: UIFontDescriptor.SystemDesign = .default) -> UIFont {
+	public static func preferredFont(forTextStyle style: TextStyle, weight: Weight, design: UIFontDescriptor.SystemDesign = .default, maxSize: CGFloat = CGFloat.greatestFiniteMagnitude) -> UIFont {
 		let preferred = UIFontDescriptor.preferredFontDescriptor(withTextStyle: style)
-		let size = preferred.pointSize
+		let size = min(preferred.pointSize, maxSize)
 		var font = UIFont.systemFont(ofSize: size, weight: weight)
 		if let desc = font.fontDescriptor.withDesign(design) {
 			font = UIFont(descriptor: desc, size: size)
