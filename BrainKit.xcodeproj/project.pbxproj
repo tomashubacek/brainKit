@@ -17,6 +17,7 @@
 		EE0A95372456C749008E3AD6 /* String+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A95362456C749008E3AD6 /* String+Foundation.swift */; };
 		EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A95392456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift */; };
 		EE0A953C2456DBC1008E3AD6 /* HelloWorld.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0A953B2456DBC1008E3AD6 /* HelloWorld.json */; };
+		EE1B2EE026F879A400B40344 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B2EDF26F879A400B40344 /* Spacer.swift */; };
 		EE24343224A49A4E008B061D /* FloatingPoint+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24343124A49A4E008B061D /* FloatingPoint+Foundation.swift */; };
 		EE24343424A49B23008B061D /* FloatingPointExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */; };
 		EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */; };
@@ -136,6 +137,7 @@
 		EE0A95392456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		EE0A953B2456DBC1008E3AD6 /* HelloWorld.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HelloWorld.json; sourceTree = "<group>"; };
 		EE0A953E2456EF90008E3AD6 /* NSManagedObjectContext+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CoreData.swift"; sourceTree = "<group>"; };
+		EE1B2EDF26F879A400B40344 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 		EE24343124A49A4E008B061D /* FloatingPoint+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Foundation.swift"; sourceTree = "<group>"; };
 		EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPointExtensionsTests.swift; sourceTree = "<group>"; };
 		EE2549A4243CBBC800008607 /* NSLayoutConstraint+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+UIKit.swift"; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 		EE0A95332456C68D008E3AD6 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				EE1B2EDE26F8799900B40344 /* Classes */,
 				EE35F9DA23F1988600F63697 /* Extensions */,
 				EE050DB5243F086C00CB691D /* Protocols */,
 			);
@@ -351,6 +354,14 @@
 				EE39CED726C11C420018C39D /* Set+CoreData.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE1B2EDE26F8799900B40344 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B2EDF26F879A400B40344 /* Spacer.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		EE3103C4247673DA007A817F /* SafariServices */ = {
@@ -779,6 +790,7 @@
 				EE39CEFF26C151EC0018C39D /* JSONUpdatable.swift in Sources */,
 				EE0A953A2456D3F0008E3AD6 /* Bundle+SwiftyJSON.swift in Sources */,
 				EE81390024010BF2005CE46D /* UIColor+UIKit.swift in Sources */,
+				EE1B2EE026F879A400B40344 /* Spacer.swift in Sources */,
 				EEB7E76F2460867700C2E1F3 /* FileManager+Foundation.swift in Sources */,
 				EE39CF0826C2CBC70018C39D /* PersistentCodableList.swift in Sources */,
 				EE8138E923FED60B005CE46D /* Collection+Foundation.swift in Sources */,
