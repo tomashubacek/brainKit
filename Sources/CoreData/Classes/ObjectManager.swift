@@ -34,7 +34,7 @@ open class ObjectManager<T> where T: NSManagedObject {
 		if let limit = limit {
 			request.fetchLimit = limit
 		}
-		let result = try? self.context.performAndWait {
+		let result = try? self.context.bk_performAndWait {
 			try request.execute()
 		}
 		return result ?? []

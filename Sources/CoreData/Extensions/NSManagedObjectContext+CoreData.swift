@@ -9,7 +9,7 @@
 import CoreData
 
 extension NSManagedObjectContext {
-	public func performAndWait<T>(_ block: () -> T) -> T {
+	public func bk_performAndWait<T>(_ block: () -> T) -> T {
 		var result: T? = nil
 		self.performAndWait {
 			result = block()
@@ -17,7 +17,7 @@ extension NSManagedObjectContext {
 		return result!
 	}
 
-	public func performAndWait<T>(_ block: () throws -> T) throws -> T {
+	public func bk_performAndWait<T>(_ block: () throws -> T) throws -> T {
 		var result: Result<T?, Error> = .success(nil)
 		self.performAndWait {
 			do {
