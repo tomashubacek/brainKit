@@ -21,10 +21,8 @@ extension UIColor {
 		var g: CGFloat = 0
 		var b: CGFloat = 0
 		var a: CGFloat = 0
-		if self.getRed(&r, green: &g, blue: &b, alpha: &a) {
-			return (r, g, b, a)
-		}
-		return (0, 0, 0, 0)
+		self.getRed(&r, green: &g, blue: &b, alpha: &a)
+		return (r, g, b, a)
 	}
 
 	public var hsbComponents: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat) {
@@ -32,10 +30,8 @@ extension UIColor {
 		var saturation: CGFloat = 0
 		var brightness: CGFloat = 0
 		var alpha: CGFloat = 0
-		if self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
-			return (hue, saturation, brightness, alpha)
-		}
-		return (0, 0, 0, 0)
+		self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+		return (hue, saturation, brightness, alpha)
 	}
 
 	public var htmlRGBHexColor: String {
