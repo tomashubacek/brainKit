@@ -62,6 +62,7 @@
 		EE5CD94F240FF4DE002C53E9 /* Sequence+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */; };
 		EE5CD951240FF522002C53E9 /* SequenceExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD950240FF522002C53E9 /* SequenceExtensionsTests.swift */; };
 		EE5CD96F24112BC4002C53E9 /* DictionaryExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CD96E24112BC4002C53E9 /* DictionaryExtensionsTests.swift */; };
+		EE5F3CC42719669300E1C593 /* NSAttributedString+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5F3CC32719669300E1C593 /* NSAttributedString+Foundation.swift */; };
 		EE663A6824BC3EDF00366C27 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE663A6724BC3EDF00366C27 /* Functions.swift */; };
 		EE663A6A24BC3EEE00366C27 /* Bool+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE663A6924BC3EEE00366C27 /* Bool+Foundation.swift */; };
 		EE728F36265508C20072588F /* RunOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE728F35265508C20072588F /* RunOnce.swift */; };
@@ -185,6 +186,7 @@
 		EE5CD94E240FF4DE002C53E9 /* Sequence+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Foundation.swift"; sourceTree = "<group>"; };
 		EE5CD950240FF522002C53E9 /* SequenceExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensionsTests.swift; sourceTree = "<group>"; };
 		EE5CD96E24112BC4002C53E9 /* DictionaryExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionsTests.swift; sourceTree = "<group>"; };
+		EE5F3CC32719669300E1C593 /* NSAttributedString+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Foundation.swift"; sourceTree = "<group>"; };
 		EE663A6724BC3EDF00366C27 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		EE663A6924BC3EEE00366C27 /* Bool+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Foundation.swift"; sourceTree = "<group>"; };
 		EE728F35265508C20072588F /* RunOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunOnce.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				EE9F211E247FE309000C3120 /* NSOrderedSet+Foundation.swift */,
 				EE9F212424810FB3000C3120 /* Optional+Foundation.swift */,
 				EE24343124A49A4E008B061D /* FloatingPoint+Foundation.swift */,
+				EE5F3CC32719669300E1C593 /* NSAttributedString+Foundation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -821,6 +824,7 @@
 				EE728F3B265511B60072588F /* UITableViewController+UIKit.swift in Sources */,
 				EE39CED026C11B860018C39D /* OrderableManagedObject.swift in Sources */,
 				EE35F9E223F1A02000F63697 /* URL+Foundation.swift in Sources */,
+				EE5F3CC42719669300E1C593 /* NSAttributedString+Foundation.swift in Sources */,
 				EE5CD94D24067E6C002C53E9 /* Array+Foundation.swift in Sources */,
 				EEB5CBA82678879600473A3B /* UIScreen+UIKit.swift in Sources */,
 				EE39CEF326C122230018C39D /* ObjectManager.swift in Sources */,
