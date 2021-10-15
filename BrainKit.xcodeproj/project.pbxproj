@@ -414,38 +414,37 @@
 		EE35F9D023F1985800F63697 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				EE8138F824003B6F005CE46D /* Support */,
 				EE8138F023FEE3FC005CE46D /* Resources */,
-				EE35F9D323F1985800F63697 /* Info.plist */,
+				EE8138F824003B6F005CE46D /* Support */,
+				EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */,
+				EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */,
+				EE39CF0D26C2D0460018C39D /* BoolTests.swift */,
+				EE8138EE23FEE3E0005CE46D /* BundleExtensionsTests.swift */,
+				EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */,
+				EE39CEE826C11F870018C39D /* CoreDataContainerTests.swift */,
+				EEAEAF8E245AA600009FC6E7 /* DateTests.swift */,
+				EE5CD96E24112BC4002C53E9 /* DictionaryExtensionsTests.swift */,
+				EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */,
+				EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */,
+				EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */,
+				EE39CF1326C2D55A0018C39D /* FunctionsTest.swift */,
+				EE3949FC262EFB0C00248433 /* JSONTests.swift */,
+				EE39CF0226C162410018C39D /* ManagedObjectSetTests.swift */,
+				EEA016F22462B2880053A9C2 /* MemCacheTests.swift */,
+				EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */,
+				EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */,
+				EE9F21262481100D000C3120 /* OptionalExtensionsTests.swift */,
+				EE39CEDA26C11C740018C39D /* OrderableSetTests.swift */,
 				EE39CF0926C2CBE40018C39D /* PersistentCodableListTests.swift */,
 				EE39CF1126C2D4880018C39D /* RunOnceTests.swift */,
-				EE39CF0F26C2D2440018C39D /* UIStackViewTests.swift */,
-				EE39CF0D26C2D0460018C39D /* BoolTests.swift */,
-				EE39CF1326C2D55A0018C39D /* FunctionsTest.swift */,
-				EE39CEDA26C11C740018C39D /* OrderableSetTests.swift */,
-				EE39CF0226C162410018C39D /* ManagedObjectSetTests.swift */,
-				EE39CEE826C11F870018C39D /* CoreDataContainerTests.swift */,
-				EE39CEF626C122F90018C39D /* ObjectManagerTests.swift */,
-				EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */,
-				EE24343324A49B23008B061D /* FloatingPointExtensionsTests.swift */,
-				EE35F9DF23F19E0200F63697 /* StringExtensionsTests.swift */,
-				EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */,
-				EE8138EA23FED667005CE46D /* CollectionExtensionsTests.swift */,
-				EE8138EE23FEE3E0005CE46D /* BundleExtensionsTests.swift */,
-				EE8138FD240054BE005CE46D /* DoubleExtensionsTests.swift */,
-				EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */,
-				EE5CD94A2405561E002C53E9 /* ArrayExtensionsTests.swift */,
-				EE050DB8243F08DA00CB691D /* StoryboardInstantiable.swift */,
 				EE5CD950240FF522002C53E9 /* SequenceExtensionsTests.swift */,
-				EE5CD96E24112BC4002C53E9 /* DictionaryExtensionsTests.swift */,
-				EEAEAF8E245AA600009FC6E7 /* DateTests.swift */,
-				EEAEAF91245AA6A6009FC6E7 /* APIDateFormatterTests.swift */,
-				EEA016EE2461A8A90053A9C2 /* DiskStorageTests.swift */,
-				EEA016F22462B2880053A9C2 /* MemCacheTests.swift */,
+				EE050DB8243F08DA00CB691D /* StoryboardInstantiable.swift */,
+				EE35F9DF23F19E0200F63697 /* StringExtensionsTests.swift */,
+				EE81390124010D03005CE46D /* UIColorExtensionsTests.swift */,
+				EE39CF0F26C2D2440018C39D /* UIStackViewTests.swift */,
 				EE3103B4247531FE007A817F /* UIViewExtensionsTests.swift */,
-				EE9F2120247FE339000C3120 /* NSOrderedSetTests.swift */,
-				EE9F21262481100D000C3120 /* OptionalExtensionsTests.swift */,
-				EE3949FC262EFB0C00248433 /* JSONTests.swift */,
+				EE35F9E323F1A04D00F63697 /* URLExtensionsTests.swift */,
+				EE35F9ED23F1B90B00F63697 /* UserDefaultsExtensionsTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -528,6 +527,7 @@
 		EE8138F824003B6F005CE46D /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				EE35F9D323F1985800F63697 /* Info.plist */,
 				EE39CEE026C11D5F0018C39D /* TestingEntity.swift */,
 				EE39CF0426C162B70018C39D /* RelatedEntity.swift */,
 				EE39CEDC26C11CB10018C39D /* TestCoreDataTestCase.swift */,
@@ -1075,7 +1075,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UnitTests/Info.plist;
+				INFOPLIST_FILE = UnitTests/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1096,7 +1096,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UnitTests/Info.plist;
+				INFOPLIST_FILE = UnitTests/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
