@@ -16,6 +16,16 @@ extension UIApplication {
 		return frame
 	}
 
+	public static var interfaceOrientation: UIInterfaceOrientation {
+		if #available(iOS 13, *) {
+			let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+			let orinetation = window?.windowScene?.interfaceOrientation
+			return orinetation ?? .unknown
+		} else {
+			return UIApplication.shared.statusBarOrientation
+		}
+	}
+
 	public var topMostViewController: UIViewController? {
 		let keyWindow = self.windows.first { $0.isKeyWindow }
 		if var topController = keyWindow?.rootViewController {
