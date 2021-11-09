@@ -104,6 +104,9 @@
 		EEC01D6D24DC4A4600318B46 /* UILabel+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D6C24DC4A4600318B46 /* UILabel+UIKit.swift */; };
 		EEC01D6F24DC4B9700318B46 /* UIStackView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D6E24DC4B9700318B46 /* UIStackView+UIKit.swift */; };
 		EEC01D7124DC4C5600318B46 /* UIScrollView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */; };
+		EEC65B4B273A6A3900B6E27C /* PeriodUnit+StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC65B4A273A6A3900B6E27C /* PeriodUnit+StoreKit.swift */; };
+		EEC65B4D273A6A8700B6E27C /* SKProductSubscriptionPeriod+StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC65B4C273A6A8700B6E27C /* SKProductSubscriptionPeriod+StoreKit.swift */; };
+		EEC65B4F273A6B1700B6E27C /* SKProductDiscount+StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC65B4E273A6B1700B6E27C /* SKProductDiscount+StoreKit.swift */; };
 		EEC8E7CF25E3B34B0021094C /* Constraint+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8E7CE25E3B34A0021094C /* Constraint+SnapKit.swift */; };
 		EED543AF2620664000CD807E /* UIViewController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED543AE2620664000CD807E /* UIViewController+UIKit.swift */; };
 		EED543B9262067FA00CD807E /* UINavigationBar+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED543B8262067FA00CD807E /* UINavigationBar+ext.swift */; };
@@ -229,6 +232,9 @@
 		EEC01D6C24DC4A4600318B46 /* UILabel+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+UIKit.swift"; sourceTree = "<group>"; };
 		EEC01D6E24DC4B9700318B46 /* UIStackView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+UIKit.swift"; sourceTree = "<group>"; };
 		EEC01D7024DC4C5600318B46 /* UIScrollView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+UIKit.swift"; sourceTree = "<group>"; };
+		EEC65B4A273A6A3900B6E27C /* PeriodUnit+StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeriodUnit+StoreKit.swift"; sourceTree = "<group>"; };
+		EEC65B4C273A6A8700B6E27C /* SKProductSubscriptionPeriod+StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProductSubscriptionPeriod+StoreKit.swift"; sourceTree = "<group>"; };
+		EEC65B4E273A6B1700B6E27C /* SKProductDiscount+StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProductDiscount+StoreKit.swift"; sourceTree = "<group>"; };
 		EEC8E7CE25E3B34A0021094C /* Constraint+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraint+SnapKit.swift"; sourceTree = "<group>"; };
 		EED543AE2620664000CD807E /* UIViewController+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIKit.swift"; sourceTree = "<group>"; };
 		EED543B8262067FA00CD807E /* UINavigationBar+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+ext.swift"; sourceTree = "<group>"; };
@@ -401,6 +407,7 @@
 		EE35F9C623F1981300F63697 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EEC65B48273A6A1C00B6E27C /* StoreKit */,
 				EEC8E7C825E3B2FB0021094C /* SnapKit */,
 				EE3103C4247673DA007A817F /* SafariServices */,
 				EEB7E7682460804900C2E1F3 /* AVFoundation */,
@@ -565,6 +572,24 @@
 			isa = PBXGroup;
 			children = (
 				EEB7E7692460806000C2E1F3 /* UIImage+AVFoundation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEC65B48273A6A1C00B6E27C /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				EEC65B49273A6A2400B6E27C /* Extensions */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		EEC65B49273A6A2400B6E27C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEC65B4A273A6A3900B6E27C /* PeriodUnit+StoreKit.swift */,
+				EEC65B4C273A6A8700B6E27C /* SKProductSubscriptionPeriod+StoreKit.swift */,
+				EEC65B4E273A6B1700B6E27C /* SKProductDiscount+StoreKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -786,10 +811,12 @@
 				EE24343224A49A4E008B061D /* FloatingPoint+Foundation.swift in Sources */,
 				EE728F36265508C20072588F /* RunOnce.swift in Sources */,
 				EEC01D6F24DC4B9700318B46 /* UIStackView+UIKit.swift in Sources */,
+				EEC65B4D273A6A8700B6E27C /* SKProductSubscriptionPeriod+StoreKit.swift in Sources */,
 				EEDEF33D250F9C0F00588359 /* PriceFormatter.swift in Sources */,
 				EED543AF2620664000CD807E /* UIViewController+UIKit.swift in Sources */,
 				EE9F211F247FE309000C3120 /* NSOrderedSet+Foundation.swift in Sources */,
 				EE8BD9C12437663F00957FAD /* UIFont+UIKit.swift in Sources */,
+				EEC65B4F273A6B1700B6E27C /* SKProductDiscount+StoreKit.swift in Sources */,
 				EEB7E76A2460806000C2E1F3 /* UIImage+AVFoundation.swift in Sources */,
 				EE39CEDF26C11D0F0018C39D /* CoreDataContainer.swift in Sources */,
 				EE39CED426C11BC60018C39D /* IdentifiableManagedObject.swift in Sources */,
@@ -838,6 +865,7 @@
 				EE39CED226C11B960018C39D /* NSManagedObjectContext+CoreData.swift in Sources */,
 				EE2549A5243CBBC800008607 /* NSLayoutConstraint+UIKit.swift in Sources */,
 				EE39CEE226C11D9F0018C39D /* UIViewController+SafariServices.swift in Sources */,
+				EEC65B4B273A6A3900B6E27C /* PeriodUnit+StoreKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
