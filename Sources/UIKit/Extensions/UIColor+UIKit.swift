@@ -9,6 +9,37 @@
 import UIKit
 
 extension UIColor {
+	public convenience init?(hexString: String) {
+		var sanitizedHex = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
+		if sanitizedHex.hasPrefix("#") {
+			sanitizedHex.remove(at: sanitizedHex.startIndex)
+		}
+		guard sanitizedHex.count == 6 else { return nil }
+		var rgbValue: UInt64 = 0
+		let result = Scanner(string: sanitizedHex).scanHexInt64(&rgbValue)
+		guard result else { return nil }
+		let red = CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0
+		let green = CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0
+		let blue = CGFloat(rgbValue & 0x0000FF) / 255.0
+		self.init(red: red, green: green, blue: blue, alpha: 1)
+	}
+
+	public convenience init?(hexStringWithAlpha: String) {
+		var sanitizedHex = hexStringWithAlpha.trimmingCharacters(in: .whitespacesAndNewlines)
+		if sanitizedHex.hasPrefix("#") {
+			sanitizedHex.remove(at: sanitizedHex.startIndex)
+		}
+		guard sanitizedHex.count == 8 else { return nil }
+		var rgbValue: UInt64 = 0
+		let result = Scanner(string: sanitizedHex).scanHexInt64(&rgbValue)
+		guard result else { return nil }
+		let red = CGFloat((rgbValue & 0xFF000000) >> 24) / 255.0
+		let green = CGFloat((rgbValue & 0x00FF0000) >> 16) / 255.0
+		let blue = CGFloat((rgbValue & 0x0000FF00) >> 8) / 255.0
+		let alpha = CGFloat(rgbValue & 0x000000FF) / 255.0
+		self.init(red: red, green: green, blue: blue, alpha: alpha)
+	}
+
 	public func image(size: CGSize) -> UIImage {
 		UIGraphicsImageRenderer(size: size).image { rendererContext in
 			self.setFill()

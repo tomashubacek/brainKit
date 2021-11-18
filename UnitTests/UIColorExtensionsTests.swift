@@ -10,6 +10,70 @@ import BrainKit
 import XCTest
 
 final class UIColorExtensionsTests: XCTestCase {
+	func test_hexString_wrongLength() {
+		let str = "123"
+		let color = UIColor(hexString: str)
+		XCTAssertNil(color)
+	}
+
+	func test_hexString_wrongInput() {
+		let str = "xxyyzz"
+		let color = UIColor(hexString: str)
+		XCTAssertNil(color)
+	}
+
+	func test_hexString_prefix() {
+		let str = "#102030"
+		let color = UIColor(hexString: str)!
+		let components = color.rgbComponents
+		XCTAssertEqual(components.red, CGFloat(16/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.green, CGFloat(32/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.blue, CGFloat(48/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.alpha, CGFloat(1))
+	}
+
+	func test_hexString_noPrefix() {
+		let str = "102030"
+		let color = UIColor(hexString: str)!
+		let components = color.rgbComponents
+		XCTAssertEqual(components.red, CGFloat(16/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.green, CGFloat(32/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.blue, CGFloat(48/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.alpha, CGFloat(1))
+	}
+
+	func test_hexStringAlpha_wrongLength() {
+		let str = "1234567890"
+		let color = UIColor(hexStringWithAlpha: str)
+		XCTAssertNil(color)
+	}
+
+	func test_hexStringAlpha_wrongInput() {
+		let str = "xxyyzz00"
+		let color = UIColor(hexStringWithAlpha: str)
+		XCTAssertNil(color)
+	}
+
+	func test_hexStringAlpha_prefix() {
+		let str = "#10203040"
+		guard let color = UIColor(hexStringWithAlpha: str) else { return XCTFail("Color string is valid, but init() failed.") }
+		let components = color.rgbComponents
+		XCTAssertEqual(components.red, CGFloat(16/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.green, CGFloat(32/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.blue, CGFloat(48/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.alpha, CGFloat(64/255.0), accuracy: 0.0001)
+	}
+
+	func test_hexStringAlpha_noPrefix() {
+		let str = "10203040"
+		guard let color = UIColor(hexStringWithAlpha: str) else { return XCTFail("Color string is valid, but init() failed.") }
+		let components = color.rgbComponents
+		XCTAssertEqual(components.red, CGFloat(16/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.green, CGFloat(32/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.blue, CGFloat(48/255.0), accuracy: 0.0001)
+		XCTAssertEqual(components.alpha, CGFloat(64/255.0), accuracy: 0.0001)
+	}
+
 	func test_ImageFromColor() {
 		// given
 		let r = 50.0
