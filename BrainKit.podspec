@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.authors = {"Ondrej Hanak" => "oh@ondrejhanak.cz", "Jakub Heglas" => "jakub@userbrain.co"}
   s.source = {:git => "https://bitbucket.org/userbrain/brainkit.git", :tag => s.version.to_s}
   s.ios.deployment_target = "11.0"
-  s.watchos.deployment_target = "5.0"
   s.default_subspecs = "Foundation", "UIKit"
 
   s.subspec "AVFoundation" do |ss|
@@ -17,12 +16,14 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "CoreData" do |ss|
+    ss.watchos.deployment_target = "5.0"
     ss.source_files = "Sources/CoreData/**/*.swift"
     ss.ios.frameworks = "Coredata"
     ss.dependency "BrainKit/SwiftyJSON"
   end
 
   s.subspec "Foundation" do |ss|
+    ss.watchos.deployment_target = "5.0"
     ss.source_files = "Sources/Foundation/**/*.swift"
     ss.ios.frameworks = "Foundation"
   end
@@ -33,6 +34,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "SwiftyJSON" do |ss|
+    ss.watchos.deployment_target = "5.0"
     ss.source_files = "Sources/SwiftyJSON/**/*.swift"
     ss.dependency "BrainKit/Foundation"
     ss.dependency "SwiftyJSON", "~> 5"
