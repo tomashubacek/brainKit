@@ -12,38 +12,8 @@ import StoreKit
 
 @available(iOS 11.2, *)
 extension SKProductSubscriptionPeriod {
-	final private class TrialPeriodFormatter {
-		static var componentFormatter: DateComponentsFormatter {
-			let formatter = DateComponentsFormatter()
-			formatter.maximumUnitCount = 1
-			formatter.unitsStyle = .full
-			formatter.zeroFormattingBehavior = .dropAll
-			return formatter
-		}
-
-		static func format(unit: NSCalendar.Unit, numberOfUnits: Int) -> String? {
-			var dateComponents = DateComponents()
-			dateComponents.calendar = Calendar.current
-			componentFormatter.allowedUnits = [unit]
-			switch unit {
-			case .day:
-				dateComponents.setValue(numberOfUnits, for: .day)
-			case .weekOfMonth:
-				dateComponents.setValue(numberOfUnits, for: .weekOfMonth)
-			case .month:
-				dateComponents.setValue(numberOfUnits, for: .month)
-			case .year:
-				dateComponents.setValue(numberOfUnits, for: .year)
-			default:
-				return nil
-			}
-
-			return componentFormatter.string(from: dateComponents)
-		}
-	}
-	
-	public func localizedPeriod() -> String? {
-		TrialPeriodFormatter.format(unit: self.unit.toCalendarUnit(), numberOfUnits: self.numberOfUnits)
-	}
+//	public func localizedPeriod() -> String? {
+//		SubscriptionPeriodFormatter.format(unit: self.unit.toCalendarUnit(), numberOfUnits: self.numberOfUnits)
+//	}
 }
 

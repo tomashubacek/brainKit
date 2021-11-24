@@ -10,14 +10,44 @@
 
 import StoreKit
 
-@available(iOS 11.2, *)
-extension SKProductDiscount {
-	public func localizedTrialPeriod() -> String? {
-		switch self.paymentMode {
-		case .freeTrial:
-			return self.subscriptionPeriod.localizedPeriod()
+final private class SubscriptionPeriodFormatter {
+	static var componentFormatter: DateComponentsFormatter {
+		let formatter = DateComponentsFormatter()
+		formatter.maximumUnitCount = 1
+		formatter.unitsStyle = .full
+		formatter.zeroFormattingBehavior = .dropAll
+		return formatter
+	}
+
+	static func format(unit: NSCalendar.Unit, numberOfUnits: Int) -> String? {
+		var dateComponents = DateComponents()
+		dateComponents.calendar = Calendar.current
+		componentFormatter.allowedUnits = [unit]
+		switch unit {
+		case .day:
+			dateComponents.setValue(numberOfUnits, for: .day)
+		case .weekOfMonth:
+			dateComponents.setValue(numberOfUnits, for: .weekOfMonth)
+		case .month:
+			dateComponents.setValue(numberOfUnits, for: .month)
+		case .year:
+			dateComponents.setValue(numberOfUnits, for: .year)
 		default:
 			return nil
+		}
+
+		return componentFormatter.string(from: dateComponents)
+	}
+}
+
+@available(iOS 11.2, *)
+extension SKProductDiscount {
+	public func localizedPeriod() -> String? {
+		switch self.paymentMode {
+		case .freeTrial:
+			return SubscriptionPeriodFormatter.format(unit: self.subscriptionPeriod.unit.toCalendarUnit(), numberOfUnits: self.subscriptionPeriod.numberOfUnits)
+		case .payUpFront, .payAsYouGo:
+			return SubscriptionPeriodFormatter.format(unit: self.subscriptionPeriod.unit.toCalendarUnit(), numberOfUnits: self.numberOfPeriods)
 		}
 	}
 }
