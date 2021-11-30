@@ -289,6 +289,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		953A40062756A7BB008CEA6C /* BrainKit */ = {
+			isa = PBXGroup;
+			children = (
+				EEC65B48273A6A1C00B6E27C /* StoreKit */,
+				EEC8E7C825E3B2FB0021094C /* SnapKit */,
+				EE3103C4247673DA007A817F /* SafariServices */,
+				EEB7E7682460804900C2E1F3 /* AVFoundation */,
+				EE0A953D2456EF81008E3AD6 /* CoreData */,
+				EE0A95382456D3A9008E3AD6 /* SwiftyJSON */,
+				EE0A95342456C6A5008E3AD6 /* Foundation */,
+				EE0A95332456C68D008E3AD6 /* UIKit */,
+				EEE3CED8248F8DD300983BE5 /* WebKit */,
+			);
+			path = BrainKit;
+			sourceTree = "<group>";
+		};
 		EE050DB5243F086C00CB691D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,15 +428,7 @@
 		EE35F9C623F1981300F63697 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EEC65B48273A6A1C00B6E27C /* StoreKit */,
-				EEC8E7C825E3B2FB0021094C /* SnapKit */,
-				EE3103C4247673DA007A817F /* SafariServices */,
-				EEB7E7682460804900C2E1F3 /* AVFoundation */,
-				EE0A953D2456EF81008E3AD6 /* CoreData */,
-				EE0A95382456D3A9008E3AD6 /* SwiftyJSON */,
-				EE0A95342456C6A5008E3AD6 /* Foundation */,
-				EE0A95332456C68D008E3AD6 /* UIKit */,
-				EEE3CED8248F8DD300983BE5 /* WebKit */,
+				953A40062756A7BB008CEA6C /* BrainKit */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
